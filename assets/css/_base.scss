@@ -1,0 +1,106 @@
+html, body {
+  height: 100%;
+}
+#page-wrap {
+  @include clearblock;
+  position: relative;
+  min-height: 100%;
+}
+body.env-dev #page-wrap {
+  min-height: calc(100% - 36px);
+}
+
+body {
+  font-family: 'Open Sans', 'Tahoma', sans-serif;
+  background-color: color('grey', lighten-3);
+  color: $base-text-color;
+  font-size: $base-font-size;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+i.left {
+  margin-right: 10px;
+}
+i.right {
+  margin-left: 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
+  font-weight: 600;
+}
+h1 {
+  font-size: 2.5rem;
+  margin: 2.2rem 0 1.2rem 0;
+}
+h2 {
+  font-size: 2.2rem;
+  margin: 2rem 0 1rem 0;
+}
+h3 {
+  font-size: 1.9rem;
+  margin: 1.8rem 0 0.9rem 0;
+}
+h4 {
+  font-size: 1.6rem;
+  margin: 1.5rem 0 0.8rem 0;
+}
+h5 {
+  font-size: 1.4rem;
+  margin: 1.2rem 0 0.7rem 0;
+}
+h6 {
+  font-size: 1.2rem;
+  margin: 1rem 0 0.6rem 0;
+}
+.row {
+  margin-left: -($gutter-width/2);
+  margin-right: -($gutter-width/2);
+  margin-bottom: 0;
+
+  &.orig {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    &.mb0 {
+      margin-bottom: 0;
+    }
+  }
+}
+.container.visible {
+  @extend .z-depth-3;
+  background-color: white;
+  padding: 20px;
+  padding-top: 5px;
+  margin: 20px auto;
+
+  @media (max-width: $small-max) {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.btn, .btn-flat {
+  text-transform: none;
+  font-weight: 600;
+}
+.btn.btn-flat:hover, .btn-large.btn-flat:hover, .btn-small.btn-flat:hover {
+  background-color: color("grey", lighten-3);
+}
+.btn:hover {
+  @each $color_name, $color in $colors {
+    @each $color_type, $color_value in $color {
+      @if $color_type == "base" {
+        &.#{$color_name} {
+          background-color: darken($color_value, 10%) !important;
+        }
+      }
+      @else if $color_name != "shades" {
+        &.#{$color_name}.#{$color_type} {
+          background-color: darken($color_value, 10%) !important;
+        }
+      }
+    }
+  }
+}

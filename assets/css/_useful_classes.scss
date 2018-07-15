@@ -1,0 +1,176 @@
+$margin-utility-classes-sizes: (0, 5, 10, 20, 30, 50, 100);
+$margin-utility-classes-intervals: ( ('xs', 0, $small-max), ('sm', $medium-min, $medium-max), ('md', $large-min, $large-max), ('lg', $extra-large-min, 0));
+
+@each $size in $margin-utility-classes-sizes {
+  .mt#{$size} {
+    margin-top: $size + 0px;
+  }
+  .mb#{$size} {
+    margin-bottom: $size + 0px;
+  }
+  .ml#{$size} {
+    margin-left: $size + 0px;
+  }
+  .mr#{$size} {
+    margin-right: $size + 0px;
+  }
+  .mti#{$size} {
+    margin-top: $size + 0px !important;;
+  }
+  .mbi#{$size} {
+    margin-bottom: $size + 0px !important;;
+  }
+  .mli#{$size} {
+    margin-left: $size + 0px !important;;
+  }
+  .mri#{$size} {
+    margin-right: $size + 0px !important;
+  }
+  @each $bp in $margin-utility-classes-intervals {
+    $media: '';
+    @if (nth($bp, 2) != 0) {
+      $media: $media + '(min-width: ' + nth($bp, 2) + ')';
+    }
+    @if (nth($bp, 3) != 0) {
+      @if ($media != '') { $media: $media + ' and '; }
+      $media: $media + '(max-width: ' + nth($bp, 3) + ')';
+    }
+    @media #{$media} {
+      .mt#{$size}-#{nth($bp, 1)} {
+        margin-top: $size + 0px;
+      }
+      .mb#{$size}-#{nth($bp, 1)} {
+        margin-bottom: $size + 0px;
+      }
+      .ml#{$size}-#{nth($bp, 1)} {
+        margin-left: $size + 0px;
+      }
+      .mr#{$size}-#{nth($bp, 1)} {
+        margin-right: $size + 0px;
+      }
+    }
+  }
+}
+
+$font-size-utility-classes-sizes: (0, 15, 18, 22, 25, 30, 35);
+@each $size in $font-size-utility-classes-sizes {
+  .fs#{$size} {
+    font-size: $size + 0px;
+  }
+}
+
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.clearblock {
+  @include clearblock;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.not-bold {
+  font-weight: normal;
+}
+
+.red {
+  color: red;
+}
+
+.normal-size {
+  font-size: 18px;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-block {
+  display: block;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+.width-auto {
+  width: auto;
+}
+.max-width-full {
+  max-width: 100%;
+}
+
+.pointer-box {
+  cursor: pointer;
+}
+
+.one-line-children {
+  white-space: nowrap;
+
+  > * {
+    white-space: normal;
+  }
+}
+$navbar-padding-horizontal: floor(($gutter-width / 2));
+$border-radius-base: 0;
+$grid-float-breakpoint: $small-screen-up;
+
+.navbar-toggle {
+  position: relative;
+  float: left;
+  margin-right: $navbar-padding-horizontal;
+  padding: 9px 10px;
+  border: none;
+  background-color: transparent;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+
+  // We remove the `outline` here, but later compensate by attaching `:hover`
+  // styles to `:focus`.
+  &:focus {
+    outline: 0;
+  }
+  &:hover, &:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  // Bars
+  .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: black;
+  }
+  .icon-bar + .icon-bar {
+    margin-top: 4px;
+  }
+}

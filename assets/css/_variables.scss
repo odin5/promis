@@ -1,0 +1,39 @@
+@mixin clearblock() {
+  &::before, &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+// certain variables need to be changed also in constants.js
+
+
+$small-max: 600px;
+$medium-min: 601px;
+$medium-max: 992px;
+$large-min: 993px;
+$large-max: 1200px;
+$extra-large-min: 1201px;
+
+$base-duration: 0.5s;
+$base-font-size: 15px;
+$base-text-color: #333;
+$base-line-height: 1.5;
+
+//$num-cols: 24;
+
+$footer-height: 30px;
+
+$promis-blue: #87E7E7;
+$promis-orange: color("orange", lighten-1);
+
+$promis-blue-map: (
+    "base":       $promis-blue,
+);
+$promis-orange-map: (
+    "base":       $promis-orange,
+);
+
+$colors: map-merge(($colors), ("promis-blue": $promis-blue-map));
+$colors: map-merge(($colors), ("promis-orange": $promis-orange-map));

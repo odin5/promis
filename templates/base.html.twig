@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="icon" type="image/png" href="{{ asset('favicon-16.png') }}" sizes="16x16">
+        <link rel="icon" type="image/png" href="{{ asset('favicon-32.png') }}" sizes="32x32">
+        <link rel="icon" type="image/png" href="{{ asset('favicon-96.png') }}" sizes="96x96">
+        <link rel="apple-touch-icon" href="{{ asset('favicon-120.png') }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon-180.png') }}">
+        <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('favicon-152.png') }}">
+        <link rel="apple-touch-icon" sizes="167x167" href="{{ asset('favicon-167.png') }}">
+
+        <title>{% block title %}{{ "Promis - simulace projektového řízení"|trans }}!{% endblock %}</title>
+        {% block stylesheets %}
+
+            <link href="https://fonts.googleapis.com/css?family=Font+Awesome|Material+Icons|Open+Sans:400,400i,600,600i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+            <link rel="stylesheet" href="{{ asset('build/app.css') }}" type="text/css">
+        {% endblock %}
+    </head>
+    <body class="{% block bodyClasses %}env-{{ app.environment }}{% endblock %}">
+        <div id="page-wrap">
+            {% block body %}{% endblock %}
+
+            {% block footer %}
+            <footer id="footer">
+                {% trans %}
+                &copy; Novou verzi aplikace Promis vytvořil Mojmír Odehnal v&nbsp;roce 2018 v&nbsp;rámci diplomové práce
+                {% endtrans %}
+            </footer>
+            {% endblock %}
+        </div>
+        {% block javascripts %}
+            <script type="text/javascript" src="{{ asset('build/app.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>

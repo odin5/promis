@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2018-07-13T11:33:04Z" source-language="cs" target-language="en" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="180b0f688cb79661b292dbe9f4dacff18b73e7a2" resname="                    &lt;h3&gt;Cíle a průběh hry&lt;/h3&gt;&#10;                    &lt;p&gt;Vážení účastníci simulační manažerské hry,&lt;/p&gt;&#10;&#10;                    &lt;p&gt;v této e-learningové aplikaci &amp;nbsp;se vás pokusíme zaujmout netradiční metodou&#10;                        zvyšování manažerské kvalifikace. Tvoří ji simulační manažerská hra. Tato metoda&#10;                        je založena na aktivní účasti vás, studentů, kteří si tak osvojujete schopnosti&#10;                        a dovednosti, potřebné pro práci na manažerských pozicích.&lt;/p&gt;&#10;&#10;                    &lt;p&gt;Simulační manažerská hra je založena na předpokladu, že nejefektivněji a&#10;                        nejtrvaleji získáte manažerské znalosti a dovednosti v&amp;nbsp;podmínkách, které se&#10;                        blíží reálným situacím v pracovním životě. Složitou hospodářskou realitu však&#10;                        nelze v&amp;nbsp;rámci hry zobrazit bez potřebných úprav.  Taková hra by byla příliš&#10;                        složitá a nepřehledná. Proto jsou v&amp;nbsp;naší hře situace, do nichž budete v rámci&#10;                        hry vstupovat, zjednodušeny ve srovnání se skutečnými situacemi, které znáte z&#10;                        praxe. Hra tvoří jakýsi model skutečného postupu a proto pečlivě sledujte její&#10;                        omezení a respektujte stanovená pravidla.&lt;/p&gt;&#10;&#10;                    &lt;p&gt;V&amp;nbsp;rámci hry se dostanete do pozice manažera dlouhodobého projektu. Jde o&#10;                        zakázku v nemalé hodnotě. Vaším cílem bude navrhnout plán stavby tak, abyste&#10;                        byli schopni zadanou stavbu realizovat v&amp;nbsp;daném termínu a to za co nejnižší&#10;                        náklady.&lt;/p&gt;&#10;&#10;                    &lt;p&gt;Ve druhé části hry si potom v&amp;nbsp;modelovém prostředí vyzkoušíte, jaké to je&#10;                        řídit samotnou realizaci projektu podle vámi navrženého plánu. Vaším úkolem bude&#10;                        řešení nenadálých problémů, které se při zhotovování každého díla vždy&#10;                        vyskytují. Při řešení těchto problémových situací musíte mít na paměti splnění&#10;                        svého úkolu: dokončit váš projekt včas a nepřekročit přitom limitní hranici&#10;                        rozpočtu.&lt;/p&gt;&#10;&#10;                    &lt;p&gt;Doufáme, že se vám hra bude líbit a díky ní získáte lepší představu o práci&#10;                        projektových manažerů a že vám nové zkušenosti, znalosti a dovednosti, které&#10;                        díky manažerské hře získáte pomohou ve vaší budoucí profesní kariéře.&lt;/p&gt;&#10;&#10;                    &lt;p&gt;&lt;em&gt;Tým lektorů hry&lt;/em&gt;&lt;/p&gt;&#10;                ">
+        <source><![CDATA[                    <h3>Cíle a průběh hry</h3>
+                    <p>Vážení účastníci simulační manažerské hry,</p>
+
+                    <p>v této e-learningové aplikaci &nbsp;se vás pokusíme zaujmout netradiční metodou
+                        zvyšování manažerské kvalifikace. Tvoří ji simulační manažerská hra. Tato metoda
+                        je založena na aktivní účasti vás, studentů, kteří si tak osvojujete schopnosti
+                        a dovednosti, potřebné pro práci na manažerských pozicích.</p>
+
+                    <p>Simulační manažerská hra je založena na předpokladu, že nejefektivněji a
+                        nejtrvaleji získáte manažerské znalosti a dovednosti v&nbsp;podmínkách, které se
+                        blíží reálným situacím v pracovním životě. Složitou hospodářskou realitu však
+                        nelze v&nbsp;rámci hry zobrazit bez potřebných úprav.  Taková hra by byla příliš
+                        složitá a nepřehledná. Proto jsou v&nbsp;naší hře situace, do nichž budete v rámci
+                        hry vstupovat, zjednodušeny ve srovnání se skutečnými situacemi, které znáte z
+                        praxe. Hra tvoří jakýsi model skutečného postupu a proto pečlivě sledujte její
+                        omezení a respektujte stanovená pravidla.</p>
+
+                    <p>V&nbsp;rámci hry se dostanete do pozice manažera dlouhodobého projektu. Jde o
+                        zakázku v nemalé hodnotě. Vaším cílem bude navrhnout plán stavby tak, abyste
+                        byli schopni zadanou stavbu realizovat v&nbsp;daném termínu a to za co nejnižší
+                        náklady.</p>
+
+                    <p>Ve druhé části hry si potom v&nbsp;modelovém prostředí vyzkoušíte, jaké to je
+                        řídit samotnou realizaci projektu podle vámi navrženého plánu. Vaším úkolem bude
+                        řešení nenadálých problémů, které se při zhotovování každého díla vždy
+                        vyskytují. Při řešení těchto problémových situací musíte mít na paměti splnění
+                        svého úkolu: dokončit váš projekt včas a nepřekročit přitom limitní hranici
+                        rozpočtu.</p>
+
+                    <p>Doufáme, že se vám hra bude líbit a díky ní získáte lepší představu o práci
+                        projektových manažerů a že vám nové zkušenosti, znalosti a dovednosti, které
+                        díky manažerské hře získáte pomohou ve vaší budoucí profesní kariéře.</p>
+
+                    <p><em>Tým lektorů hry</em></p>
+                ]]></source>
+        <target><![CDATA[
+<h3>Cíle a průběh hry</h3>
+<p>Vážení účastníci simulační manažerské hry,</p>
+<p>
+v této e-learningové aplikaci &nbsp;se vás pokusíme zaujmout netradiční metodou
+zvyšování manažerské kvalifikace. Tvoří ji simulační manažerská hra. Tato metoda
+je založena na aktivní účasti vás, studentů, kteří si tak osvojujete schopnosti
+a dovednosti, potřebné pro práci na manažerských pozicích.
+</p>
+
+<p>
+Simulační manažerská hra je založena na předpokladu, že nejefektivněji a
+nejtrvaleji získáte manažerské znalosti a dovednosti v&nbsp;podmínkách, které se
+blíží reálným situacím v pracovním životě. Složitou hospodářskou realitu však
+nelze v&nbsp;rámci hry zobrazit bez potřebných úprav.  Taková hra by byla příliš
+složitá a nepřehledná. Proto jsou v&nbsp;naší hře situace, do nichž budete v rámci
+hry vstupovat, zjednodušeny ve srovnání se skutečnými situacemi, které znáte z
+praxe. Hra tvoří jakýsi model skutečného postupu a proto pečlivě sledujte její
+omezení a respektujte stanovená pravidla.
+</p>
+<p>
+V&nbsp;rámci hry se dostanete do pozice manažera dlouhodobého projektu. Jde o
+zakázku v nemalé hodnotě. Vaším cílem bude navrhnout plán stavby tak, abyste
+byli schopni zadanou stavbu realizovat v&nbsp;daném termínu a to za co nejnižší
+náklady.
+</p>
+<p>
+Ve druhé části hry si potom v&nbsp;modelovém prostředí vyzkoušíte, jaké to je
+řídit samotnou realizaci projektu podle vámi navrženého plánu. Vaším úkolem bude
+řešení nenadálých problémů, které se při zhotovování každého díla vždy
+vyskytují. Při řešení těchto problémových situací musíte mít na paměti splnění
+svého úkolu: dokončit váš projekt včas a nepřekročit přitom limitní hranici
+rozpočtu.
+</p>
+<p>
+Doufáme, že se vám hra bude líbit a díky ní získáte lepší představu o práci
+projektových manažerů a že vám nové zkušenosti, znalosti a dovednosti, které
+díky manažerské hře získáte pomohou ve vaší budoucí profesní kariéře.
+</p>
+
+<p><em>Tým lektorů hry</em></p>
+                ]]></target>
+        <jms:reference-file line="58">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4ec9c080a85eb701b612beac265dcc0c62b69468" resname="            &amp;copy; Novou verzi aplikace Promis vytvořil Mojmír Odehnal v&amp;nbsp;roce 2018 v&amp;nbsp;rámci diplomové práce&#10;        ">
+        <source><![CDATA[            &copy; Novou verzi aplikace Promis vytvořil Mojmír Odehnal v&nbsp;roce 2018 v&nbsp;rámci diplomové práce
+        ]]></source>
+        <target><![CDATA[&copy; Novou verzi aplikace Promis vytvořil Mojmír Odehnal v&nbsp;roce 2018 v&nbsp;rámci diplomové práce
+        ]]></target>
+        <jms:reference-file line="86">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="ae19272817dd0e94246f73e706fc798e173db8a9" resname="Chyba:">
+        <source>Chyba:</source>
+        <target>__Chyba:</target>
+        <jms:reference-file line="18">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="3e9e4ee268dbe11a30d364066c179ff64f6a6122" resname="Heslo:">
+        <source>Heslo:</source>
+        <target>__Heslo:</target>
+        <jms:reference-file line="29">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="01f980df717e4f32ba38e8094d94daa612779c65" resname="Hra">
+        <source>Hra</source>
+        <target state="new">Hra</target>
+        <jms:reference-file line="68">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="cfe6e4aabe21ecccce71f97ee9519ce2a7ec86ff" resname="Odhlásit">
+        <source>Odhlásit</source>
+        <target>Sign out</target>
+        <jms:reference-file line="45">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="1bc88490c8a15e839d7fcc8217e7adcb817b368d" resname="Požádat o vytvoření účtu">
+        <source>Požádat o vytvoření účtu</source>
+        <target>__Požádat o vytvoření účtu</target>
+        <jms:reference-file line="40">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="27ae817d6102ee379d08bb28f652a1c81a2efcbf" resname="Promis - simulace projektového řízení">
+        <source>Promis - simulace projektového řízení</source>
+        <target>__Promis - simulace projektového řízení</target>
+        <jms:reference-file line="16">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\base.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="1d647ae3d27b49cc2407cbd39bc34dd2f31f34fe" resname="Přihlásit">
+        <source>Přihlásit</source>
+        <target>Sign in</target>
+        <jms:reference-file line="39">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="ff4440f8c68ff0407142412433559af7a352b7c0" resname="Přihlášen jako:">
+        <source>Přihlášen jako:</source>
+        <target state="new">Přihlášen jako:</target>
+        <jms:reference-file line="34">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="db4291e0a8028685c7c9478325da7e4faa233f89" resname="Přihlášení">
+        <source>Přihlášení</source>
+        <target>__Přihlášení</target>
+        <jms:reference-file line="13">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="8c6bf582752298340d4c8a9cb680fb29d4de7b92" resname="Skrýt levé menu">
+        <source>Skrýt levé menu</source>
+        <target state="new">Skrýt levé menu</target>
+        <jms:reference-file line="22">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4e861edf9eca731b11ac80f8c046bc94b0410581" resname="Trenažér řízení projektů Promis">
+        <source>Trenažér řízení projektů Promis</source>
+        <target>__Trenažér řízení projektů Promis</target>
+        <jms:reference-file line="16">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+        <jms:reference-file line="17">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+        <jms:reference-file line="59">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+        <jms:reference-file line="60">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+        <jms:reference-file line="8">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+        <jms:reference-file line="9">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="bd0a96ccdce562d23c1db88641921cbd135e7542" resname="Trvalé přihlášení:">
+        <source>Trvalé přihlášení:</source>
+        <target>__Trvalé přihlášení:</target>
+        <jms:reference-file line="33">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="a387815827b38e4bf66ebeea267c9e91d34ac9df" resname="Uživatelské jméno:">
+        <source>Uživatelské jméno:</source>
+        <target>__Uživatelské jméno:</target>
+        <jms:reference-file line="25">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="ae2883a526af5b7068602e15ac9d0ae962af65e7" resname="Zavřít">
+        <source>Zavřít</source>
+        <target state="new">Zavřít</target>
+        <jms:reference-file line="56">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+        <jms:reference-file line="99">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="8d1fc78f22529966847bf70678c2ca8d8771d894" resname="Zavřít toto menu">
+        <source>Zavřít toto menu</source>
+        <target state="new">Zavřít toto menu</target>
+        <jms:reference-file line="63">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="cec951d5fe658009c28e86440f308f00a06ad90d" resname="Zobrazit cíle a průběh hry">
+        <source>Zobrazit cíle a průběh hry</source>
+        <target state="new">Zobrazit cíle a průběh hry</target>
+        <jms:reference-file line="48">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="14464cbe0d8527e424c31a7c30ceb44641d96a1f" resname="Zobrazit levé menu">
+        <source>Zobrazit levé menu</source>
+        <target state="new">Zobrazit levé menu</target>
+        <jms:reference-file line="21">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="c946ffc538977482c93ea76f493eccb95a20dedd" resname="Zobrazit profil">
+        <source>Zobrazit profil</source>
+        <target state="new">Zobrazit profil</target>
+        <jms:reference-file line="39">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f3f617bd9b50f5e1f0c3dabe76ebd3fc986908a1" resname="Zpráva:">
+        <source>Zpráva:</source>
+        <target>__Zpráva:</target>
+        <jms:reference-file line="5">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_utils\include_flash_messages_printout.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="d4441771edb7014dd390fa681f7301a93369b006" resname="Zprávy:">
+        <source>Zprávy:</source>
+        <target>__Zprávy:</target>
+        <jms:reference-file line="6">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_utils\include_flash_messages_printout.html.twig\</jms:reference-file>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

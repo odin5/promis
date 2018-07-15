@@ -1,0 +1,26 @@
+.login-content {
+  .login-form {
+    width: 450px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: ($gutter-width/2);
+    padding-right: ($gutter-width/2);
+
+    .card-action .buttons-wrap {
+      display: flex;
+      justify-content: space-between;
+
+      > * {
+        margin-bottom: 5px;
+      }
+      @media (max-width: $small-max) {
+        flex-direction: column;
+        text-align: center;
+
+        > :not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

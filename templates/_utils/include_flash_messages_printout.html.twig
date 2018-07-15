@@ -1,0 +1,14 @@
+{% set flashMessages = app.session.flashbag.get( flashbagName ) %}
+{% if flashMessages is not empty %}
+    <p>
+        <strong>
+            {% if flashMessages|length == 1 %}{{ 'Zpráva:'|trans }}
+            {%- else %}{{ 'Zprávy:'|trans }}<br>
+            {%- endif -%}
+        </strong>
+      {%- for flashMessage in flashMessages -%}
+        {%- if not loop.first %}<br>{% endif %}
+        {{ flashMessage|trans }}
+      {%- endfor %}
+    </p>
+{% endif %}

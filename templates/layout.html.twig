@@ -1,0 +1,107 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}{{ parent() }}
+{% endblock %}
+
+{% block javascripts %}{{ parent() }}
+{% endblock %}
+
+{% block body %}
+
+    <header id="header">
+        <nav class="nav-wrapper promis-blue black-text clearblock" id="top-nav">
+            <ul class="left">
+                <li class="hide-on-med-and-down">
+                    <a href="{{ path('index') }}" class="d-block center mt0 promis-logo waves-effect">
+                        <img src="{{ asset('build/assets/images/logo-promis-157w.png') }}" align="Logo Promis" title="{{ "Trenažér řízení projektů Promis"|trans }}" width="157" sizes="157px"
+                             srcset="{% for w in [157, 225, 400, 500, 800, 1000] %}{{ asset('build/assets/images/logo-promis-'~ w ~'w.png') }} {{ w }}w{{ not loop.last ? ',' }}{% endfor %}">
+                        <span class="sr-only">{{ "Trenažér řízení projektů Promis"|trans }}</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="left waves-effect" id="left-menu-toggle" data-open-text="{{ "Zobrazit levé menu"|trans }}"
+                            data-close-text="{{ "Skrýt levé menu"|trans }}" title="{{ "Skrýt levé menu"|trans }}">
+                        <div class="navbar-toggle left">
+                            <span class="icon-bar top-bar"></span>
+                            <span class="icon-bar middle-bar"></span>
+                            <span class="icon-bar bottom-bar"></span>
+                        </div>
+                        <div class=" left hide-on-med-and-down text"></div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="right">
+                <li class="row orig mb0 hide-on-med-and-down">
+                    <div class="col">{{ "Přihlášen jako:"|trans }} {{ app.user.username }}</div>
+                </li>
+                <li>
+                    <a role="button" href="{{ path('app_user_profile') }}" class="black-text semi-bold waves-effect">
+                        <i class="material-icons">person</i>
+                        <span class="hide-on-small-and-down">{{ "Zobrazit profil"|trans }}</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ path('logout') }}" class="black-text semi-bold waves-effect">
+                        <i class="material-icons">exit_to_app</i>
+                        <span class="hide-on-small-and-down">{{ "Odhlásit"|trans }}</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside id="left-menu" class="open">
+        <div class="bg"></div>
+        <div class="overlay close-left-menu"></div>
+        <div class="view">
+            <nav class="sidenav">
+                <div class="mobile-top">
+                    <a href="{{ path('index') }}" class="promis-logo left waves-effect">
+                        <img src="{{ asset('build/assets/images/logo-promis-225w.png') }}" align="Logo Promis" title="{{ "Trenažér řízení projektů Promis"|trans }}" width="225" sizes="225px"
+                             srcset="{% for w in [157, 225, 400, 500, 800, 1000] %}{{ asset('build/assets/images/logo-promis-'~ w ~'w.png') }} {{ w }}w{{ not loop.last ? ',' }}{% endfor %}">
+                        <span class="sr-only">{{ "Trenažér řízení projektů Promis"|trans }}</span>
+                    </a>
+                    <button type="button" class="btn-flat close-left-menu right waves-effect">
+                        <span class="sr-only">{{ "Zavřít toto menu"|trans }}</span> &nbsp;
+                        <i class="material-icons">close</i>
+                    </button>
+                </div>
+                <ul>
+                    <li><span class="line subheader">{{ "Hra"|trans }}</span></li>
+                    <li><a href="#!" class="one-line-children line waves-effect">
+                            <i class="material-icons">cloud</i> <span class="text">First Link With Icon</span>
+                        </a></li>
+                    <li><a class="line waves-effect" href="#!">
+                            <span class="text">Second Link</span>
+                        </a></li>
+
+                    {% if is_granted('ROLE_ADMIN') %}
+                        <li><span class="line subheader">{{ "Administrace"|trans }}</span></li>
+                        <li><a class="line waves-effect" href="#!">
+                                <i class="material-icons">settings</i> <span class="text">{{ "Editace projektů"|trans }}</span>
+                            </a></li>
+                        <li><a href="{{ path("jms_translation_index") }}" class="one-line-children line waves-effect">
+                                <i class="material-icons">translate</i> <span class="text">{{ "Editace překladů textů"|trans }}</span>
+                            </a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+            <nav class="sidenav languages">
+                <ul>
+                    <li><div class="divider"></div></li>
+                    <li>
+                        <a href="{{ path(app.request.attributes.get('_route'), {_locale: app.request.locale == 'cs' ? 'en' : 'cs'}) }}"
+                                class="one-line-children line waves-effect center promis-blue">
+                            <i class="material-icons">translate</i>
+                            <span class="text">{{ app.request.locale == 'cs' ? 'English' : 'Česky' }}</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <main id="main-content">
+{% block content %}{% endblock %}
+    </main>
+{% endblock %}

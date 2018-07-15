@@ -1,0 +1,30 @@
+rest_bundle:
+    resource: "@RestBundleBundle/Resources/config/routing.yml"
+    prefix:   /api/
+
+index:
+    path: /
+    controller: App\Controller\UserController::profile
+
+login:
+    path: /login
+    controller: App\Controller\UserController::login
+
+login_locale:
+    path: /{_locale}/login
+    controller: App\Controller\UserController::login
+    requirements:
+        _locale: '%locales_regex%'
+    defaults:
+        _locale: '%locale%'
+
+login_check:
+    path:  /kontrola_prihlaseni
+
+logout:
+    path:  /logout
+
+JMSTranslationBundle_ui:
+    resource: "@JMSTranslationBundle/Controller/"
+    type:     annotation
+    prefix:   /_trans

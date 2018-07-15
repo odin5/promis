@@ -1,0 +1,25 @@
+php bin/console make:entity --recompile
+php bin/console make:migration
+php bin/console doctrine:migration:migrate
+
+npm run watch <OR> yarn run encore dev --watch <OR> ./node_modules/.bin/encore dev --watch
+java -jar swagger-codegen-cli.jar generate -l php-symfony -i openapi-spec.yaml -c swagger-config.json && php swagger-fix.php
+
+
+Na produkci bude potřeba nainstalovat:
+- apache
+- php 7.2
+- postgreSQL
+- asi Adminer
+- node (již obsahuje npm)
+- yarn
+při nasazování na produkci bude třeba:
+- změnit v .env proměnou APP_ENV na prod
+- (?zastavit server?)
+- spustit: composer install --no-dev --optimize-autoloader
+- spustit: php bin/console make:migration
+- spustit: php bin/console doctrine:migrations:migrate
+- spustit: php bin/console cache:clear --env=prod --no-debug
+- spustit: java -jar swagger-codegen-cli.jar generate -l php-symfony -i openapi-spec.yaml -c swagger-config.json && php swagger-fix.php
+- spustit: yarn build
+- (?spustit server?)
