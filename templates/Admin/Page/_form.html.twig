@@ -1,0 +1,8 @@
+{% form_theme form '_utils/form_theme.html.twig' %}
+
+{{ form_start(form) }}
+  {{ form_widget(form) }}
+
+  <a href="{{ path('admin_page_index') }}" class="waves-effect waves-dark btn btn-flat right">{{ "back to list"|trans }}</a>
+  <button class="btn">{{ button_label|default('Save'|trans) }}</button>
+{{ form_end(form) }}

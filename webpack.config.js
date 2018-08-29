@@ -14,7 +14,8 @@ Encore
     })
 
     // uncomment to define the assets of the project
-    .addEntry('app', './assets/js/app.js')
+    .addEntry('main', './assets/js/main.js')
+    .addEntry('apiPlatformAdmin', './assets/js/apiPlatformAdmin.js')
     //.addEntry('js/app', './assets/js/app.js')
     //.addStyleEntry('css/app', './assets/css/app.scss')
 
@@ -27,13 +28,17 @@ Encore
          };
     })
     .configureBabel(function(babelConfig) {
+        babelConfig.presets.push('es2017');
+        babelConfig.presets.push('es2016');
+        babelConfig.presets.push('es2015');
         babelConfig.plugins.push('react-html-attrs');
         babelConfig.plugins.push('transform-class-properties');
         babelConfig.plugins.push('transform-decorators-legacy');
+        babelConfig.plugins.push('transform-object-rest-spread');
     })
+    .enableBuildNotifications()
 ;
-
 
 module.exports = Encore.getWebpackConfig();
 
-require('fs').writeFileSync("var/cache/generatedWebpackConfig.txt", JSON.stringify(module.exports, null, 2));
+require('fs').writeFileSync("var/generatedWebpackConfig.txt", JSON.stringify(module.exports, null, 2));

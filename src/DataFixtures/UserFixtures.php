@@ -9,12 +9,14 @@
 namespace App\DataFixtures;
 
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use App\Entity;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 
-class UserFixtures extends Fixture {
+class UserFixtures extends Fixture implements DependentFixtureInterface
+{
 
     private $passwordEncoder;
 
@@ -23,24 +25,24 @@ class UserFixtures extends Fixture {
         $this->passwordEncoder = $passwordEncoder;
     }
 
-    public function load(ObjectManager $manager) {
+    public function load(ObjectManager $manager)
+    {
         $user = new Entity\User();
 
         $password = $this->passwordEncoder->encodePassword($user, 'admin');
         $user->setUsername('admin')->setEmail('admin@pokus.cz')->setPassword($password);
+        $user->setFirstname('Admin')->setLastname('Adminovič')->setSchool($this->getReference('school'));
         $user->setRoles(['ROLE_SUPER_ADMIN']);
-        $this->setReference('user1', $user);
+        $this->setReference('admin', $user);
         $manager->persist($user);
 
         $manager->flush();
     }
 
-//    public function getDependencies()
-//    {
-//        return array(
-//            UserFixtures::class,
-//        );
-//    }
+    public function getDependencies()
+    {
+        return array(
+            SchoolFixtures::class,
+        );
+    }
 }
-
-?>

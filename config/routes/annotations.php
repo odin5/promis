@@ -18,4 +18,7 @@ return function (RoutingConfigurator $routes) {
             ->prefix(
                 $kernel->getContainer()->getParameter('locales_to_url_prefixes')
             );
+
+    $routes
+        ->import('../../src/Api/Controller/', 'annotation');
 };

@@ -1,20 +1,18 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Mojmír Odehnal <mojmir.odehnal@centrum.cz>
- * Date: 11.07.2018
- * Time: 17:44
+ * Author: Mojmír Odehnal <mojmir.odehnal@centrum.cz>
  */
 
 namespace App\Repository;
 
-use Doctrine\ORM\EntityRepository;
 use Doctrine\ORM\NoResultException;
 
-class UserRepository extends EntityRepository {
-    public function getPresetForAllWasteOrNull($user = null) {
+class UserRepository extends BaseRepository
+{
+    public function getPresetForAllWasteOrNull($user = null)
+    {
         $qb = $this->createQueryBuilder('p')//->select('p.id')
-        ->leftJoin('p.wastePlusCodes','c')
+        ->leftJoin('p.join','c')
             ->groupBy('p.id')->having('count(c.id) = 0')
             ->setMaxResults(1);
         if(is_null($user)) {
@@ -29,7 +27,9 @@ class UserRepository extends EntityRepository {
         }
         return $result;
     }
-    public function createPresetsForNewUserAndFlush(User $user) {
+
+    public function createPresetsForNewUserAndFlush(User $user)
+    {
         $em = $this->getEntityManager();
         $defaultPresets = $this->findByUser(null);
         foreach($defaultPresets as $defaultPreset) {

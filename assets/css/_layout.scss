@@ -1,6 +1,9 @@
 #top-nav {
   z-index: 10;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 
   > .right {
     @media (min-width: $medium-min) {
@@ -29,6 +32,7 @@
   }
   #left-menu-toggle {
     color: black;
+    margin: 0;
 
     .text {
       min-width: 140px;
@@ -60,105 +64,31 @@
       }
     }
   }
+
+  @media (max-width: $small-max) {
+    img {
+      max-height: 48px;
+      width: auto;
+    }
+    a.promis-logo {
+      max-height: 56px;
+    }
+  }
 }
 
 #left-menu {
-  float: left;
-  width: 0;
-  min-height: 50px;
-  transition: width $base-duration;
   font-size: 0;
   line-height: 0;
-  padding-bottom: $footer-height;
 
-  .mobile-top {
-    display: none;
-  }
-  > .view {
-    overflow-x: hidden;
-  }
-  > .bg {
+  > .no-horizontal-overflow {
     @extend .z-depth-3;
-    background-color: white;
-    position: absolute;
-    width: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -10;
-    transition: width $base-duration;
   }
-  &.open, &.open > .bg {
-    width: 300px;
-  }
-
   .sidenav {
-    z-index: 0;
-    padding: 0;
     font-size: $base-font-size;
     line-height: 1.5;
-    position: static;
-    width: 300px;
-    height: auto;
-    transition: transform $base-duration;
-    overflow-y: visible;
-    box-shadow: none;
-    transform: translateX(-100%);
 
     .mobile-top + ul > li:first-child > .subheader {
       margin-top: 0;
-    }
-  }
-  &.open .sidenav {
-    transform: translateX(0%);
-  }
-
-  > .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    opacity: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: -20;
-    transition: opacity $base-duration;
-  }
-  
-  @media (max-width: $medium-max) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 50;
-
-    &.open > .overlay {
-      width: auto;
-      height: auto;
-      right: 0;
-      bottom: 0;
-      opacity: 1;
-    }
-    .mobile-top {
-      @include clearblock;
-      display: block;
-      border-bottom: 1px solid #ddd;
-
-      .promis-logo img {
-        max-height: 100px;
-        padding: 10px 7px;
-      }
-      .close-left-menu {
-        padding: 10px 15px;
-        height: auto;
-        line-height: 0;
-        font-size: 0;
-
-        i {
-          display: inline-block;
-          font-size: 30px;
-        }
-      }
     }
   }
 
@@ -203,17 +133,17 @@
     font-weight: 500;
     line-height: 48px;
     background-color: #ddd;
-    margin: 15px 0 0;
+    margin: 5px 0 0;
   }
 
-  .languages {
+  .language-switch {
     position: absolute;
     top: auto;
-    bottom: $footer-height;
+    bottom: 0;
     left: 0;
     right: 0;
 
-    a {
+    li > a.line {
       font-size: 24px;
       padding: 16px;
 
@@ -225,6 +155,112 @@
         font-weight: bold;
       }
     }
+  }
+
+  @media (max-width: $medium-max) {
+    .no-horizontal-overflow {
+      box-shadow: none;
+    }
+    .mobile-top {
+      @include clearblock;
+      display: block;
+
+      .promis-logo img {
+        max-height: 100px;
+        padding: 10px 7px;
+      }
+      .close-left-menu {
+        padding: 10px 15px;
+        height: auto;
+        line-height: 0;
+        font-size: 0;
+
+        i {
+          display: inline-block;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  @media (min-width: $large-min) {
+    width: 0;
+    transition: width $base-duration;
+    z-index: 1;
+    position: relative;
+
+    .mobile-top {
+      display: none;
+    }
+    > .no-horizontal-overflow {
+      overflow-x: hidden;
+      overflow-y: auto;
+      background-color: white;
+      position: fixed;
+      width: 0;
+      left: 0;
+      top: $header-height-desktop;
+      bottom: $footer-height;
+      padding-bottom: 55px;
+      z-index: -10;
+      transition: width $base-duration;
+
+      @media (max-width: $small-max) {
+        top: $header-height-mobile;
+      }
+    }
+    &.open, &.open > .no-horizontal-overflow {
+      width: $left-menu-width;
+    }
+
+    .sidenav {
+      z-index: 0;
+      padding: 0;
+      font-size: $base-font-size;
+      line-height: 1.5;
+      width: $left-menu-width;
+      height: auto;
+      transition: transform $base-duration;
+      overflow-y: visible;
+      box-shadow: none;
+      transform: translateX(-100%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      padding-bottom: 56px;
+
+      .mobile-top + ul > li:first-child > .subheader {
+        margin-top: 0;
+      }
+    }
+    &.open .sidenav {
+      transform: translateX(0%);
+    }
+
+    &.no-anim, &.no-anim > .no-horizontal-overflow , &.no-anim .sidenav {
+      transition: none;
+    }
+
+    .scroll-pane {
+      max-height: 100%;
+      overflow-y: auto;
+    }
+
+    i.material-icons {
+      height: auto;
+      line-height: 36px;
+    }
+  }
+}
+.sidenav-overlay {
+  user-select: none;
+}
+
+body.env-dev #left-menu .no-horizontal-overflow {
+  bottom: $footer-height + 36px;
+
+  @media (max-width: $medium-max) {
+    bottom: 36px;
   }
 }
 
@@ -242,15 +278,16 @@
 }
 @media (min-width: $large-min) {
   #left-menu.open + #main-content {
-    margin-left: 300px;
+    margin-left: $left-menu-width;
   }
 }
 
 #footer {
   z-index: 10;
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   height: $footer-height;   /* Height of the footer */
   padding: 5px 10px 0;
   background: $promis-orange;
@@ -262,4 +299,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   border-top: 1px solid #940;
+}
+body.env-dev #footer {
+  bottom: 36px;
 }

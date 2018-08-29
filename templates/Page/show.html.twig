@@ -1,0 +1,9 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+  <div class="container visible">
+    <h1>{{ page.title|raw }}</h1>
+
+    {{ page.content|raw }}
+  </div>
+{% endblock %}

@@ -1,0 +1,30 @@
+api_platform:
+    title: Promis API for browser client
+    version: 2.0.0
+    description: |
+        API for Promis application.
+    mapping:
+        paths: ['%kernel.project_dir%/src/Entity', '%kernel.project_dir%/src/Api/Dto']
+    http_cache:
+        max_age: 0
+        shared_max_age: 3600
+        vary: ['Content-Type', 'Authorization']
+        public: true
+    formats:
+        jsonld: ['application/ld+json']
+        jsonhal: ['application/hal+json']
+        jsonapi: ['application/vnd.api+json']
+        json: ['application/json']
+        xml: ['application/xml', 'text/xml']
+        yaml: ['application/x-yaml']
+        csv: ['text/csv']
+        html: ['text/html']
+    collection:
+        pagination:
+            # To enable or disable pagination for all resource collections by default.
+            enabled: false
+
+            # To allow the client to enable or disable the pagination.
+            # GET /books?pagination=true&page=1&itemsPerPage=20
+            client_enabled: true
+            client_items_per_page: true

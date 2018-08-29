@@ -1,0 +1,119 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <main id="main-content" class="center login-content">
+
+        {{ form(form) }}
+        <div class="right-align language-switch">
+            <a href="{% if app.request.locale == 'cs' -%}
+                        {{- path('login_locale', {_locale: 'en'}) -}}
+                    {%- else -%}
+                        {{- path('login') -}}
+                    {%- endif %}"
+               class="btn-large waves-effect promis-blue black-text">
+                <i class="material-icons left">translate</i>
+                <span class="text">{{ app.request.locale == 'cs' ? 'English' : 'Česky' }}</span>
+            </a>
+        </div>
+        <h1 class="mt10 mb0 fs0">
+            <span class="fs22 d-block">{{ "Simulační manažerská hra"|trans }}</span>
+            <a href="{{ path('index') }}" class="d-inline-block center mt5 fs0 promis-logo">
+                <img src="{{ asset('build/assets/images/logo-promis-400w.png') }}" align="Logo Promis" title="{{ "Promis"|trans }}" width="400" sizes="400px"
+                     srcset="{% for w in [157, 225, 400, 500, 800, 1000] %}{{ asset('build/assets/images/logo-promis-'~ w ~'w.png') }} {{ w }}w{{ not loop.last ? ',' }}{% endfor %}">
+                <span class="sr-only">{{ "Promis"|trans }}</span>
+            </a>
+        </h1>
+
+        <h2 class="mb20 mt5">{{ "Přihlášení"|trans }}</h2>
+
+        {% include '_utils/include_flashMessagesPrintout.html.twig' with { flashbagName: 'notice' } %}
+
+        {% if error %}
+            <p class="login_error"><strong>{{ "Chyba:"|trans }}</strong> {{ error.messageKey|trans(error.messageData, 'security') }}</p>
+        {% endif %}
+
+        <form action="{{ path('login_check') }}" method="post" class="login-form card left-align">
+            <div class="card-content">
+                <div class="input-field">
+                    <input type="text" id="username" name="_username" value="{{ last_username }}" class="input_text" />
+                    <label for="username">{{ "Uživatelské jméno:"|trans }}</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="password" name="_password" class="input_text" />
+                    <label for="password">{{ "Heslo:"|trans }}</label>
+                </div>
+                <label>
+                    <input type="checkbox" id="remember_me" name="_remember_me" />
+                    <span>{{ "Trvalé přihlášení"|trans }}</span>
+                </label>
+            </div>
+            {# <input type="hidden" name="_target_path" value="/account" /> #}
+            <div class="card-action">
+                <div class="buttons-wrap">
+                    <button type="submit" class="waves-effect waves-light btn promis-blue black-text ">{{ "Přihlásit"|trans }}</button>
+                    <a href="#" class="waves-effect waves-grey btn btn-flat mri0">{{ "Zapomenuté heslo"|trans }}</a>
+                </div>
+            </div>
+        </form>
+
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn-large modal-trigger mt30 orange" href="#modal1">
+            <i class="material-icons left">visibility</i>
+            {{ "Zobrazit cíle a průběh hry"|trans }}
+        </a>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content left-align">
+                <a href="#!" class="modal-close waves-effect waves-green btn right orange">
+                    <i class="material-icons left">close</i>
+                    {{ "Zavřít"|trans }}
+                </a>
+                {% trans %}
+                    <h3>Cíle a průběh hry</h3>
+                    <p>Vážení účastníci simulační manažerské hry,</p>
+
+                    <p>v této e-learningové aplikaci &nbsp;se vás pokusíme zaujmout netradiční metodou
+                        zvyšování manažerské kvalifikace. Tvoří ji simulační manažerská hra. Tato metoda
+                        je založena na aktivní účasti vás, studentů, kteří si tak osvojujete schopnosti
+                        a dovednosti, potřebné pro práci na manažerských pozicích.</p>
+
+                    <p>Simulační manažerská hra je založena na předpokladu, že nejefektivněji a
+                        nejtrvaleji získáte manažerské znalosti a dovednosti v&nbsp;podmínkách, které se
+                        blíží reálným situacím v pracovním životě. Složitou hospodářskou realitu však
+                        nelze v&nbsp;rámci hry zobrazit bez potřebných úprav.  Taková hra by byla příliš
+                        složitá a nepřehledná. Proto jsou v&nbsp;naší hře situace, do nichž budete v rámci
+                        hry vstupovat, zjednodušeny ve srovnání se skutečnými situacemi, které znáte z
+                        praxe. Hra tvoří jakýsi model skutečného postupu a proto pečlivě sledujte její
+                        omezení a respektujte stanovená pravidla.</p>
+
+                    <p>V&nbsp;rámci hry se dostanete do pozice manažera dlouhodobého projektu. Jde o
+                        zakázku v nemalé hodnotě. Vaším cílem bude navrhnout plán stavby tak, abyste
+                        byli schopni zadanou stavbu realizovat v&nbsp;daném termínu a to za co nejnižší
+                        náklady.</p>
+
+                    <p>Ve druhé části hry si potom v&nbsp;modelovém prostředí vyzkoušíte, jaké to je
+                        řídit samotnou realizaci projektu podle vámi navrženého plánu. Vaším úkolem bude
+                        řešení nenadálých problémů, které se při zhotovování každého díla vždy
+                        vyskytují. Při řešení těchto problémových situací musíte mít na paměti splnění
+                        svého úkolu: dokončit váš projekt včas a nepřekročit přitom limitní hranici
+                        rozpočtu.</p>
+
+                    <p>Doufáme, že se vám hra bude líbit a díky ní získáte lepší představu o práci
+                        projektových manažerů a že vám nové zkušenosti, znalosti a dovednosti, které
+                        díky manažerské hře získáte pomohou ve vaší budoucí profesní kariéře.</p>
+
+                    <p><em>Tým lektorů hry</em></p>
+                {% endtrans %}
+            </div>
+            <div class="modal-footer">
+                <div class="center">
+                    <a href="#!" class="modal-close waves-effect btn orange darken-1">
+                        <i class="material-icons left">close</i>
+                        {{ "Zavřít"|trans }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

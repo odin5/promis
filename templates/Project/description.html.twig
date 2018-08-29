@@ -1,0 +1,10 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}{{ 'Popis projektu'|trans }} | {{ parent() }}{% endblock %}
+
+{% block content %}
+  <div class="container visible">
+    <h1>{{ 'Popis projektu'|trans }}</h1>
+    {{ project.formattedDescription|raw }}
+  </div>
+{% endblock %}

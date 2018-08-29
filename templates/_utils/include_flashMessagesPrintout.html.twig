@@ -1,0 +1,13 @@
+{% set flashMessages = app.session.flashbag.get( flashbagName ) %}
+{% if flashMessages is not empty %}
+  <div class="{{ colorClass|default('green lighten-4') }}">
+    <ul class="browser-default">
+      <li>
+    {%- for flashMessage in flashMessages -%}
+    {%- if not loop.first %}</li><li class="browser-default">{% endif %}
+    {{ flashMessage|trans }}
+    {%- endfor %}
+      </li>
+    </ul>
+  </div>
+{% endif %}

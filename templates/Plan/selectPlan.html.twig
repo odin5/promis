@@ -1,0 +1,46 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}{{ 'Výběr plánu'|trans }} | {{ parent() }}{% endblock %}
+
+{% block content %}
+  <div class="container visible">
+    <h3>{{ 'Výběr plánu'|trans }}</h3>
+
+    {% include '_utils/include_flashMessagesPrintout.html.twig' with {flashbagName: 'success'}%}
+
+    <form method="post">
+      {{ form_errors(form) }}
+
+      {% if pproject and pproject.isPlanning %}
+        <table class="border-less content-wide">
+          <tr><th>{{ 'Projekt'|trans }}:</th><td>{{ pproject.project }}</td></tr>
+          <tr><th>{{ 'Můžete odehrát ještě'|trans }}:</th><td>{{ playable }}x</td></tr>
+          <tr><th>{{ 'Odehráno již'|trans }}:</th><td>{{ pproject.played }}x</td></tr>
+          <tr><th>{{ form_label(form.plan, null, {'label_attr': {class: 'browser-default'}}) }}:</th>
+            <td>
+              <div class="d-inline-block">
+                {{ form_errors(form.plan) }}
+                {{ form_widget(form.plan) }}
+              </div>
+              {{ form_widget(form.choose) }}
+              {% if form.duplicate is defined %}
+                {{ form_widget(form.duplicate) }}
+              {% endif %}
+            </td>
+          </tr>
+        </table>
+        {{ form_row(form.name) }}
+        {{ form_widget(form.new) }}
+        {{ form_widget(form.rename) }}
+        {% if form.defaultPlan is defined %}
+          ... {{ form_widget(form.defaultPlan) }}
+        {% endif %}
+        <br/>
+      {% else %}
+        {{ 'Již máte naplánovanou hru. Nelze dále plánovat.'|trans }}
+      {% endif %}
+
+      {{ form_rest(form) }}
+    </form>
+  </div>
+{% endblock %}

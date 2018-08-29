@@ -1,0 +1,13 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}{{ "New Page"|trans }}{% endblock %}
+
+{% block content %}
+  <div class="container visible">
+    <a href="{{ path('admin_page_index') }}" class="waves-effect waves-dark btn btn-flat right mt15">{{ "back to list"|trans }}</a>
+
+    <h1 class="mt5">{{ "Create new Page"|trans }}</h1>
+
+    {{ include('admin/page/_form.html.twig') }}
+  </div>
+{% endblock %}

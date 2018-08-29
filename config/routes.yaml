@@ -1,6 +1,6 @@
-rest_bundle:
-    resource: "@RestBundleBundle/Resources/config/routing.yml"
-    prefix:   /api/
+api_platform_admin:
+    path: /api/admin
+    controller: App\Controller\DefaultController::apiPlatformAdmin
 
 index:
     path: /

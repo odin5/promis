@@ -5,6 +5,15 @@ html, body {
   @include clearblock;
   position: relative;
   min-height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+body.with-top-menu #page-wrap  {
+  padding-top: $header-height-desktop;
+
+  @media (max-width: $small-max) {
+    padding-top: $header-height-mobile;
+  }
 }
 body.env-dev #page-wrap {
   min-height: calc(100% - 36px);
@@ -13,6 +22,11 @@ body.env-dev #page-wrap {
 body {
   font-family: 'Open Sans', 'Tahoma', sans-serif;
   background-color: color('grey', lighten-3);
+  color: $base-text-color;
+  font-size: $base-font-size;
+}
+
+label.browser-default {
   color: $base-text-color;
   font-size: $base-font-size;
 }
@@ -55,6 +69,16 @@ h6 {
   font-size: 1.2rem;
   margin: 1rem 0 0.6rem 0;
 }
+nav {
+  color: $base-text-color;
+}
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+  border-bottom: 1px solid #ccc;
+}
 .row {
   margin-left: -($gutter-width/2);
   margin-right: -($gutter-width/2);
@@ -70,7 +94,7 @@ h6 {
   }
 }
 .container.visible {
-  @extend .z-depth-3;
+  @extend .z-depth-2;
   background-color: white;
   padding: 20px;
   padding-top: 5px;
@@ -79,6 +103,12 @@ h6 {
   @media (max-width: $small-max) {
     width: 100%;
     margin-top: 0;
+  }
+
+  > h1, h2, h3, h4, h5, h6 {
+    &:first-child {
+      margin-top: 5px;
+    }
   }
 }
 .btn, .btn-flat {
@@ -100,6 +130,33 @@ h6 {
         &.#{$color_name}.#{$color_type} {
           background-color: darken($color_value, 10%) !important;
         }
+      }
+    }
+  }
+}
+.btn-floating.btn-large {
+  font-size: 1.6rem;
+  line-height: 56px;
+}
+ul.list {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 40px;
+  list-style: disc !important;
+}
+table {
+  &.content-wide {
+    width: auto;
+  }
+  &.border-less {
+    &, td, th, tr {
+      border: 0;
+    }
+    td, th {
+      padding: 5px 5px;
+
+      &:first-child {
+        padding-left: 0;
       }
     }
   }

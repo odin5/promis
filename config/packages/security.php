@@ -9,7 +9,7 @@
 //var_dump($container);exit;
 
 $config = [
-// https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+    // https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     'encoders' => [
         'App\Entity\User' => [
             'algorithm' => 'bcrypt',
@@ -18,7 +18,9 @@ $config = [
     ],
 
     'role_hierarchy' => [
-        'ROLE_ADMIN' => [ 'ROLE_STUDENT' ],
+        'ROLE_STUDENT' => [ 'ROLE_USER' ],
+        'ROLE_TEACHER' => [ 'ROLE_STUDENT' ],
+        'ROLE_ADMIN' => [ 'ROLE_TEACHER' ],
         'ROLE_SUPER_ADMIN' => [ 'ROLE_ADMIN', 'ROLE_ALLOWED_TO_SWITCH' ],
     ],
 
@@ -27,6 +29,11 @@ $config = [
         'users' => [
             'entity' => [ 'class' => '\App\Entity\User', 'property' => 'username' ],
         ],
+    ],
+
+    // https://symfony.com/doc/current/security/voters.html#changing-the-access-decision-strategy
+    'access_decision_manager' => [
+        'strategy' => 'affirmative', // default - grant access as soon as there is one voter granting access
     ],
 
     'firewalls' => [
@@ -65,7 +72,7 @@ $config = [
                 // following line to always enable it.
                 //'always_remember_me' => true,
             ],
-            //'http_basic' => true
+            'http_basic' => true,
             // 'https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
 
             //'form_login' => true

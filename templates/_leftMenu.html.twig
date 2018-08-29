@@ -1,0 +1,48 @@
+{% macro menuItem(icon, label, active, link) %}
+  {% if active %}
+    <li class="active">
+      <span class="one-line-children line">
+        <i class="material-icons">{{ icon }}</i> <span class="text">{{ label }}</span>
+      </span>
+    </li>
+  {% else %}
+    <li{% if active %} class="active"{% endif %}>
+      <a href="{{ link }}" class="one-line-children line waves-effect">
+        <i class="material-icons">{{ icon }}</i> <span class="text">{{ label }}</span>
+      </a>
+    </li>
+  {% endif %}
+{% endmacro %}
+{% import _self as macros %}
+{% set activeMenuItems = activeMenuItems|default([]) %}
+
+<div class="scroll-pane">
+  <div class="mobile-top">
+    <a href="{{ path('index') }}" class="promis-logo left waves-effect">
+      <img src="{{ asset('build/assets/images/logo-promis-225w.png') }}" align="Logo Promis" title="{{ "Trenažér řízení projektů Promis"|trans }}" width="225" sizes="225px"
+           srcset="{% for w in [157, 225, 400, 500, 800, 1000] %}{{ asset('build/assets/images/logo-promis-'~ w ~'w.png') }} {{ w }}w{{ not loop.last ? ',' }}{% endfor %}">
+      <span class="sr-only">{{ "Trenažér řízení projektů Promis"|trans }}</span>
+    </a>
+    <button type="button" class="btn-flat close-left-menu right waves-effect">
+      <span class="sr-only">{{ "Zavřít toto menu"|trans }}</span> &nbsp;
+      <i class="material-icons">close</i>
+    </button>
+  </div>
+  <ul>
+    {% block leftMenuContent %}
+      {{ render(controller('App\\Controller\\MenuController::leftMenuContent')) }}
+    {% endblock leftMenuContent %}
+  </ul>
+</div>
+<ul class="language-switch">
+  <li><div class="divider"></div></li>
+  <li>
+    {% set langRouteParams = app.request.attributes.get('_route_params') %}
+    {% set langRouteParams = langRouteParams|merge({ _locale: app.request.locale == 'cs' ? 'en' : 'cs' }) %}
+    <a href="{{ path(app.request.attributes.get('_route'), langRouteParams) }}"
+       class="one-line-children line waves-effect center promis-blue">
+      <i class="material-icons">translate</i>
+      <span class="text">{{ app.request.locale == 'cs' ? 'English' : 'Česky' }}</span>
+    </a>
+  </li>
+</ul>

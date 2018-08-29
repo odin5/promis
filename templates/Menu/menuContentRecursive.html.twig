@@ -1,0 +1,38 @@
+{% set recursionDepth = recursionDepth is defined ? recursionDepth : 0 %}
+{% for item in items %}
+  {% set liCssClass = item.liCssClass ?: '' %}
+
+  {% if item.type == 'GroupItem' %}
+    {% set cssClass = item.cssClass ?: 'line subheader' %}
+    {% if item.notShowLabelIfFirstItem and loop.index0 == 0 and recursionDepth == 0 %}
+      {% set cssClass = (cssClass ? ' ') ~ 'sr-only' %}
+    {% endif %}
+
+    <li{% if liCssClass %} class="{{ liCssClass }}"{% endif %}>
+      {% if item.label %}
+        <span class="{{ cssClass }}">{{ item.label }}</span>
+      {% endif %}
+      {% if item.items %}
+        <ul>
+          {{ include(_self, {items: item.items, recursionDepth: recursionDepth + 1}) }}
+        </ul>
+      {% endif %}
+    </li>
+
+  {% elseif item.type == 'LinkItem' %}
+    {% set cssClass = item.cssClass ?: 'one-line-children line waves-effect' %}
+    {% if item.active %}{% set liCssClass = (liCssClass ? ' ') ~ 'active' %}{% endif %}
+
+    <li{% if liCssClass %} class="{{ liCssClass }}"{% endif %}>
+      <a href="{{ item.link }}" class="{{ cssClass }}">
+        {% if item.iconHtml -%}
+          {{ item.iconHtml|raw }}
+        {%- elseif item.icon -%}
+          <i class="material-icons">{{ item.icon }}</i>
+        {%- endif %}
+        <span class="text">{{ item.label }}</span>
+      </a>
+    </li>
+
+  {% endif %}
+{% endfor %}

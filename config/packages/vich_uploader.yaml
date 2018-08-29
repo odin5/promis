@@ -1,0 +1,18 @@
+vich_uploader:
+    db_driver: orm
+
+    mappings:
+        default:
+            uri_prefix: /uploads
+            upload_destination: '%kernel.root_dir%/public/%uploads_dir%'
+            namer: Vich\UploaderBundle\Naming\OrignameNamer # generates 50eb3db039715_foo.jpg
+
+        icon:
+            uri_prefix: /uploads/icons
+            upload_destination: '%kernel.root_dir%/public/%uploads_dir%/%icon_subdir%'
+            namer: Vich\UploaderBundle\Naming\OrignameNamer # generates 50eb3db039715_foo.jpg
+
+        attachment:
+            uri_prefix: /uploads/attachments
+            upload_destination: '%kernel.root_dir%/public/%uploads_dir%/%attachment_subdir%'
+            namer: Vich\UploaderBundle\Naming\OrignameNamer # generates 50eb3db039715_foo.jpg

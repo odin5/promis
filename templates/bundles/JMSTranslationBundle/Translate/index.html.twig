@@ -13,7 +13,8 @@
 
 {% block body %}
 
-    <form id="config" action="{{ path("jms_translation_index") }}" method="get">
+    <form id="config" action="{{ path("jms_translation_index") }}" method="get" style="text-align: center">
+        Source:
         <select name="config" class="span3">
             {% for config in configs %}
             <option value="{{ config }}"{% if config == selectedConfig %} selected="selected"{% endif %}>{{ config }}</option>
@@ -52,7 +53,7 @@
 
     <h2>Available Messages</h2>
 	<h3>
-		Filter messages by Id
+		Filter messages by ID
 		<input id="filter" placeholder="Enter a key to filter the entries." title="A wildcard/regexp-search for '*your_key*' will be done. You can also use the '.' as 1-char wildcard, '.*' as wildcard for 0-n chars. Search the web for 'JS Regex Documentation' for more information about regular expressions."/>
 	</h3>
 

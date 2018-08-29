@@ -1,0 +1,34 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}{{ 'Profil uživatele'|trans }} | {{ parent() }}!{% endblock %}
+
+{% block content %}
+  <div class="container visible">
+    <h3>{{ 'Profil uživatele'|trans }}</h3>
+    <table class="border-less content-wide">
+      <tr><td>{{ 'Jméno'|trans }}:</td><td>{{ app.user.firstName }}</td></tr>
+      <tr><td>{{ 'Příjmení'|trans }}:</td><td>{{ app.user.lastName }}</td></tr>
+      <tr><td>{{ 'ID. číslo'|trans }}:</td><td>{{ app.user.idNumber }}</td></tr>
+      <tr><td>{{ 'E-mail'|trans }}:</td><td><a href="mailto:{{ app.user.email }}">{{ app.user.email }}</a></td></tr>
+      <tr><td>{{ 'Kontakty'|trans }}:</td><td>{{ app.user.contacts }}</td></tr>
+      <tr><td>{{ 'Kurz'|trans }}:</td><td>{{ app.user.course }}</td></tr>
+      <tr><td colspan="2">
+          <a href="{{ path('app_user_passwordchange') }}" class="btn waves-effect">
+            {{ 'Změnit heslo'|trans }}
+          </a></td></tr>
+    </table>
+    {% if projects %}
+      <h3>{{ 'Dostupné projekty'|trans }}</h3>
+      <ul class="browser-default">
+        {% for project in projects %}
+          <li>
+            <a href="{{ path('app_project_selectplan', {project: project.id}) }}">{{ project }}</a>
+            {% if project.perex %} {{ project.perex|raw }}{% endif %}
+          </li>
+        {% else %}
+          <li><em>{{ "Nyní pro vás není k dispozici žádný projekt"|trans }}</em></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+{% endblock %}

@@ -8,16 +8,11 @@
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Response;
 
-class DefaultController extends Controller
+class DefaultController extends AbstractController
 {
-    public function index() {
-        return $this->render('default/index.html.twig');
-    }
-
-    public function login() {
-        return $this->render('default/login.html.twig');
+    public function apiPlatformAdmin() {
+        return $this->render('default/apiPlatformAdmin.html.twig');
     }
 }

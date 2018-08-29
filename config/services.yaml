@@ -6,7 +6,11 @@ parameters:
         cs: '' # don't prefix URLs for English, the default locale
         en: '/en'
     locales_regex: cs|en
+    locales_array: [cs, en]
     table_prefix: promis_
+    uploads_dir: 'uploads'
+    icon_subdir: 'icons'
+    attachment_subdir: 'attachments'
 
 services:
     # default configuration for services in *this* file
@@ -21,7 +25,7 @@ services:
     # this creates a service per class whose id is the fully-qualified class name
     App\:
         resource: '../src/*'
-        exclude: '../src/{Entity,Migrations,Tests,RestBundle,Kernel.php}'
+        exclude: '../src/{Entity,Migrations,Tests,Kernel.php}'
 
     # controllers are imported separately to make sure services can be injected
     # as action arguments even if you don't extend any base controller class
@@ -29,20 +33,66 @@ services:
         resource: '../src/Controller'
         tags: ['controller.service_arguments']
 
-    App\RestBundle\Controller\:
-        resource: '../src/RestBundle/Controller'
-        tags: ['controller.service_arguments']
-
+    # aliases
+    ApiPlatform\Core\PathResolver\OperationPathResolverInterface: '@api_platform.operation_path_resolver'
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
 
-    App\EventListener\TablePrefixListener:
-        arguments: ['%table_prefix%']
-        tags:
-            - { name: doctrine.event_listener, event: loadClassMetadata }
+    JMS\TranslationBundle\Controller\TranslateController:
+        arguments: { $configFactory: '@jms_translation.config_factory', $loader: '@jms_translation.loader_manager' }
+        tags: ['controller.service_arguments']
+        calls:
+            - method: setSourceLanguage
+              arguments:
+                  - '%jms_translation.source_language%'
 
-    App\EventListener\ResponseListener:
-        arguments: ['%kernel.environment%']
+    JMS\TranslationBundle\Controller\ApiController:
+        arguments: { $configFactory: '@jms_translation.config_factory', $updater: '@jms_translation.updater' }
+        tags: ['controller.service_arguments']
+
+
+    App\EventListener\KernelSubscriber:
+        arguments: { $appEnvironment: '%kernel.environment%' }
         tags:
-            - { name: kernel.event_listener, event: kernel.response} #, method: onKernelResponse, priority: "??" }
+            - { name: kernel.event_subscriber}
+
+    App\EventListener\SecuritySubscriber:
+        tags:
+            - { name: kernel.event_subscriber}
+
+    App\EventListener\DoctrineSubscriber:
+        arguments: { $tablePrefix: '%table_prefix%'}
+        tags:
+            - { name: doctrine.event_subscriber }
+
+    App\Api\EventListener\KernelSubscriber:
+        tags:
+            - { name: kernel.event_subscriber}
+
+
+    App\Api\Serializer\NormalizerContextBuilder:
+        decorates: 'api_platform.serializer.context_builder'
+        arguments: [ '@App\Api\Serializer\NormalizerContextBuilder.inner' ]
+        autoconfigure: false
+
+    App\Api\Swagger\SwaggerDecorator:
+        decorates: 'api_platform.swagger.normalizer.documentation'
+        arguments: [ '@App\Api\Swagger\SwaggerDecorator.inner' ]
+        autoconfigure: false
+
+    App\Api\Serializer\IriConverterDecorator:
+        decorates: 'api_platform.iri_converter'
+        arguments:
+            $decorated: '@App\Api\Serializer\IriConverterDecorator.inner'
+            $identifiersExtractor: '@api_platform.identifiers_extractor.cached'
+            $routeNameResolver: '@api_platform.route_name_resolver'
+        autoconfigure: false
+
+    App\Api\Serializer\AccessPerItemNormalizer:
+        tags:
+            - { name: 'serializer.normalizer', priority: 64 }
+
+    App\Api\Serializer\ModifyResponseNormalizer:
+        tags:
+            - { name: 'serializer.normalizer', priority: 0 }

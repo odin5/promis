@@ -2,11 +2,16 @@
     "devDependencies": {
         "@symfony/webpack-encore": "^0.20.1",
         "autoprefixer": "^8.6.3",
+        "babel-cli": "^6.26.0",
         "babel-core": "6",
-        "babel-loader": "^7.1.4",
+        "babel-loader": "^7.1.5",
         "babel-plugin-react-html-attrs": "^2.1.0",
         "babel-plugin-transform-class-properties": "^6.24.1",
         "babel-plugin-transform-decorators-legacy": "^1.3.5",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-es2016": "^6.24.1",
+        "babel-preset-es2017": "^6.24.1",
         "babel-preset-react": "^6.24.1",
         "eslint": "^4",
         "eslint-config-standard": "^11.0.0",
@@ -14,34 +19,42 @@
         "eslint-plugin-node": "^6.0.1",
         "eslint-plugin-promise": "^3.7.0",
         "eslint-plugin-standard": "^3.0.1",
+        "i18next-scanner": "^2.6.5",
         "node-sass": "^4.9.0",
         "postcss-loader": "^2.1.5",
+        "pre-build-webpack": "^0.1.0",
+        "q": "^1.5.1",
         "sass-loader": "^7.0.3",
-        "webpack": "^3.0"
+        "vinyl-fs": "^3.0.3",
+        "webpack": "^3.0",
+        "webpack-notifier": "^1.6.0"
     },
     "license": "UNLICENSED",
     "private": true,
     "scripts": {
         "dev-server": "./node_modules/.bin/encore dev-server",
-        "_orig_dev-server": "encore dev-server",
         "dev": "./node_modules/.bin/encore dev",
-        "_orig_dev": "encore dev",
         "watch": "./node_modules/.bin/encore dev --watch",
-        "_orig_watch": "encore dev --watch",
-        "build": "./node_modules/.bin/encore production",
-        "_orig_build": "encore production"
+        "build": "./node_modules/.bin/encore production"
     },
     "dependencies": {
+        "@api-platform/admin": "^0.5.0",
         "axios": "^0.18.0",
         "cssnano": "^4.0.1",
+        "i18next": "^11.6.0",
         "jquery": "^3.3.1",
         "lodash": "^4.17.10",
         "prop-types": "^15.6.2",
         "react": "^16.4.1",
         "react-dom": "^16.4.1",
+        "react-i18next": "^7.11.0",
+        "react-redux": "^5.0.7",
         "react-scripts": "^1.1.4",
+        "redux": "^4.0.0",
+        "redux-thunk": "^2.3.0",
         "smooth-scroll": "^14.2.0",
-        "velocity": "^0.7.2"
+        "velocity": "^0.7.2",
+        "whatwg-fetch": "^2.0.4"
     },
     "browserslist": [
         "last 4 versions"

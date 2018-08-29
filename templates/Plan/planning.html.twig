@@ -1,0 +1,16 @@
+{% extends 'layout.html.twig' %}
+
+{#% set leftMenuClosedOnLoad = true %#}
+
+{% block content %}
+  <style>
+    #planning {
+  
+    }
+    #planning .setting {
+      background-color: white;
+    }
+  </style>
+  <div id="planning-screen" data-plan="{{ plan.id }}" data-locale="{{ app.request.locale }}"></div>
+  {# Populated by assets/js/react/planning/components/MainPlanning.js #}
+{% endblock %}

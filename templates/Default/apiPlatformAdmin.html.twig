@@ -1,0 +1,16 @@
+{% extends 'layout.html.twig' %}
+
+{% set withoutLeftMenu = true %}
+
+{% block content %}
+  <div id="api-platform-admin-screen"></div>
+{% endblock %}
+
+{% block stylesheets %}
+  {{ parent() }}
+{% endblock %}
+
+{% block javascripts %}
+  {{ parent() }}
+  <script type="text/javascript" src="{{ asset('build/apiPlatformAdmin.js') }}"></script>
+{% endblock %}

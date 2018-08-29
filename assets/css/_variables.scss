@@ -6,7 +6,7 @@
   }
 }
 
-// certain variables need to be changed also in constants.js
+// certain variables need to be changed also in config.js
 
 
 $small-max: 600px;
@@ -23,7 +23,20 @@ $base-line-height: 1.5;
 
 //$num-cols: 24;
 
+$header-height-desktop: 64px;
+$header-height-mobile: 56px;
+
 $footer-height: 30px;
+
+$navbar-height: 64px !default;
+$navbar-line-height: $navbar-height !default;
+$navbar-height-mobile: 56px !default;
+$navbar-line-height-mobile: $navbar-height-mobile !default;
+$navbar-font-size: 1rem !default;
+$navbar-font-color: #fff !default;
+$navbar-brand-font-size: 2.1rem !default;
+
+$left-menu-width: 250px;
 
 $promis-blue: #87E7E7;
 $promis-orange: color("orange", lighten-1);

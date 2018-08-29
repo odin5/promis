@@ -1,8 +1,10 @@
 .idea
 .eslintcache
-src/RestBundle
+assets/js/SwaggerClient.js
+src/SwaggerBundle
 src/Migrations
 /public/uploads/*
+/public/api
 
 ###> symfony/framework-bundle ###
 /.env

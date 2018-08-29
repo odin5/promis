@@ -1,0 +1,17 @@
+{% extends 'layout.html.twig' %}
+
+{% set withoutLeftMenu = true %}
+
+{% block content %}
+  <div id="swagger-ui"></div>
+{% endblock %}
+
+{% block stylesheets %}
+  {{ parent() }}
+  <link rel="stylesheet" href="{{ asset('build/swagger-ui.css') }}" type="text/css">
+{% endblock %}
+
+{% block javascripts %}
+  {{ parent() }}
+  <script type="text/javascript" src="{{ asset('build/swagger-ui.js') }}"></script>
+{% endblock %}

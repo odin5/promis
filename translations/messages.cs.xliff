@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
-  <file date="2018-07-13T00:52:22Z" source-language="cs" target-language="cs" datatype="plaintext" original="not.available">
+  <file date="2018-08-22T15:50:40Z" source-language="cs" target-language="cs" datatype="plaintext" original="not.available">
     <header>
       <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
@@ -42,160 +42,568 @@
 
                     <p><em>Tým lektorů hry</em></p>
                 ]]></source>
-        <target><![CDATA[<h3>Cíle a průběh hry</h3>
-<p>Vážení účastníci simulační manažerské hry,</p>
-<p>
-v této e-learningové aplikaci &nbsp;se vás pokusíme zaujmout netradiční metodou
-zvyšování manažerské kvalifikace. Tvoří ji simulační manažerská hra. Tato metoda
-je založena na aktivní účasti vás, studentů, kteří si tak osvojujete schopnosti
-a dovednosti, potřebné pro práci na manažerských pozicích.
-</p>
+        <target><![CDATA[                    <h3>Cíle a průběh hry</h3>
+                    <p>Vážení účastníci simulační manažerské hry,</p>
 
-<p>
-Simulační manažerská hra je založena na předpokladu, že nejefektivněji a
-nejtrvaleji získáte manažerské znalosti a dovednosti v&nbsp;podmínkách, které se
-blíží reálným situacím v pracovním životě. Složitou hospodářskou realitu však
-nelze v&nbsp;rámci hry zobrazit bez potřebných úprav.  Taková hra by byla příliš
-složitá a nepřehledná. Proto jsou v&nbsp;naší hře situace, do nichž budete v rámci
-hry vstupovat, zjednodušeny ve srovnání se skutečnými situacemi, které znáte z
-praxe. Hra tvoří jakýsi model skutečného postupu a proto pečlivě sledujte její
-omezení a respektujte stanovená pravidla.
-</p>
-<p>
-V&nbsp;rámci hry se dostanete do pozice manažera dlouhodobého projektu. Jde o
-zakázku v nemalé hodnotě. Vaším cílem bude navrhnout plán stavby tak, abyste
-byli schopni zadanou stavbu realizovat v&nbsp;daném termínu a to za co nejnižší
-náklady.
-</p>
-<p>
-Ve druhé části hry si potom v&nbsp;modelovém prostředí vyzkoušíte, jaké to je
-řídit samotnou realizaci projektu podle vámi navrženého plánu. Vaším úkolem bude
-řešení nenadálých problémů, které se při zhotovování každého díla vždy
-vyskytují. Při řešení těchto problémových situací musíte mít na paměti splnění
-svého úkolu: dokončit váš projekt včas a nepřekročit přitom limitní hranici
-rozpočtu.
-</p>
-<p>
-Doufáme, že se vám hra bude líbit a díky ní získáte lepší představu o práci
-projektových manažerů a že vám nové zkušenosti, znalosti a dovednosti, které
-díky manažerské hře získáte pomohou ve vaší budoucí profesní kariéře.
-</p>
+                    <p>v této e-learningové aplikaci &nbsp;se vás pokusíme zaujmout netradiční metodou
+                        zvyšování manažerské kvalifikace. Tvoří ji simulační manažerská hra. Tato metoda
+                        je založena na aktivní účasti vás, studentů, kteří si tak osvojujete schopnosti
+                        a dovednosti, potřebné pro práci na manažerských pozicích.</p>
 
-<p><em>Tým lektorů hry</em></p>
+                    <p>Simulační manažerská hra je založena na předpokladu, že nejefektivněji a
+                        nejtrvaleji získáte manažerské znalosti a dovednosti v&nbsp;podmínkách, které se
+                        blíží reálným situacím v pracovním životě. Složitou hospodářskou realitu však
+                        nelze v&nbsp;rámci hry zobrazit bez potřebných úprav.  Taková hra by byla příliš
+                        složitá a nepřehledná. Proto jsou v&nbsp;naší hře situace, do nichž budete v rámci
+                        hry vstupovat, zjednodušeny ve srovnání se skutečnými situacemi, které znáte z
+                        praxe. Hra tvoří jakýsi model skutečného postupu a proto pečlivě sledujte její
+                        omezení a respektujte stanovená pravidla.</p>
+
+                    <p>V&nbsp;rámci hry se dostanete do pozice manažera dlouhodobého projektu. Jde o
+                        zakázku v nemalé hodnotě. Vaším cílem bude navrhnout plán stavby tak, abyste
+                        byli schopni zadanou stavbu realizovat v&nbsp;daném termínu a to za co nejnižší
+                        náklady.</p>
+
+                    <p>Ve druhé části hry si potom v&nbsp;modelovém prostředí vyzkoušíte, jaké to je
+                        řídit samotnou realizaci projektu podle vámi navrženého plánu. Vaším úkolem bude
+                        řešení nenadálých problémů, které se při zhotovování každého díla vždy
+                        vyskytují. Při řešení těchto problémových situací musíte mít na paměti splnění
+                        svého úkolu: dokončit váš projekt včas a nepřekročit přitom limitní hranici
+                        rozpočtu.</p>
+
+                    <p>Doufáme, že se vám hra bude líbit a díky ní získáte lepší představu o práci
+                        projektových manažerů a že vám nové zkušenosti, znalosti a dovednosti, které
+                        díky manažerské hře získáte pomohou ve vaší budoucí profesní kariéře.</p>
+
+                    <p><em>Tým lektorů hry</em></p>
                 ]]></target>
-        <jms:reference-file line="58">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+        <jms:reference-file line="72">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\login.html.twig\</jms:reference-file>
       </trans-unit>
-      <trans-unit id="4ec9c080a85eb701b612beac265dcc0c62b69468" resname="            &amp;copy; Novou verzi aplikace Promis vytvořil Mojmír Odehnal v&amp;nbsp;roce 2018 v&amp;nbsp;rámci diplomové práce&#10;        ">
-        <source><![CDATA[            &copy; Novou verzi aplikace Promis vytvořil Mojmír Odehnal v&nbsp;roce 2018 v&nbsp;rámci diplomové práce
-        ]]></source>
-        <target><![CDATA[&copy; Novou verzi aplikace Promis vytvořil Mojmír Odehnal v&nbsp;roce 2018 v&nbsp;rámci diplomové práce hejjjjj]]></target>
-        <jms:reference-file line="86">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+      <trans-unit id="1939c28a1f6cf9df8db792d9f582a8a7b84cecf5" resname="      &amp;copy; Novou verzi aplikace Promis vytvořil Mojmír Odehnal v&amp;nbsp;roce 2018 v&amp;nbsp;rámci diplomové práce&#10;      ">
+        <source><![CDATA[      &copy; Novou verzi aplikace Promis vytvořil Mojmír Odehnal v&nbsp;roce 2018 v&nbsp;rámci diplomové práce
+      ]]></source>
+        <target state="new"><![CDATA[      &copy; Novou verzi aplikace Promis vytvořil Mojmír Odehnal v&nbsp;roce 2018 v&nbsp;rámci diplomové práce
+      ]]></target>
+        <jms:reference-file line="33">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\base.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="72809ca60574d87907f8a4545fab1c156d77dce6" resname="Administrace">
+        <source>Administrace</source>
+        <target xml:space="preserve">                      Administrace
+                    </target>
+        <jms:reference-file line="154">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="13b8fbbd425e44b0bfff3225c5db5d2cce1113cf" resname="Aktuální heslo">
+        <source>Aktuální heslo</source>
+        <target state="new">Aktuální heslo</target>
+        <jms:reference-file line="25">\..\..\..\..\C:/virtual_hosts/new-promis/src\Form\User\ChangePasswordType.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="570082f2019cacc8e308f46dec444e8c7d93d0d4" resname="Aktuální plán">
+        <source>Aktuální plán</source>
+        <target state="new">Aktuální plán</target>
+        <jms:reference-file line="69">\..\..\..\..\C:/virtual_hosts/new-promis/src\Controller\ProjectController.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="97a6ea74a568ec44a80095a3233c221acf023ba7" resname="Are you sure you want to delete this item?">
+        <source>Are you sure you want to delete this item?</source>
+        <target state="new">Are you sure you want to delete this item?</target>
+        <jms:reference-file line="2">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\_delete_form.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="d142d755b86e3ab5a54fd67b894e53335b605c83" resname="Cash-flow">
+        <source>Cash-flow</source>
+        <target state="new">Cash-flow</target>
+        <jms:reference-file line="140">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+        <jms:reference-file line="94">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="ae19272817dd0e94246f73e706fc798e173db8a9" resname="Chyba:">
         <source>Chyba:</source>
-        <target>Chyba:</target>
-        <jms:reference-file line="18">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+        <target state="new">Chyba:</target>
+        <jms:reference-file line="32">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\login.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4f9be057f0ea5d2ba72fd2c810e8d7b9aa98b469" resname="Content">
+        <source>Content</source>
+        <target state="new">Content</target>
+        <jms:reference-file line="15">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\index.html.twig\</jms:reference-file>
+        <jms:reference-file line="24">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\show.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="547703394f410af94d93bacaad9158fda8fc9228" resname="Create new">
+        <source>Create new</source>
+        <target state="new">Create new</target>
+        <jms:reference-file line="39">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\index.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="54be5e73b157d2c259edb192139fc913a78865d5" resname="Create new Page">
+        <source>Create new Page</source>
+        <target state="new">Create new Page</target>
+        <jms:reference-file line="9">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\new.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f6fdbe48dc54dd86f63097a03bd24094dedd713a" resname="Delete">
+        <source>Delete</source>
+        <target state="new">Delete</target>
+        <jms:reference-file line="5">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\_delete_form.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="931f547e8ab4c48d471e3f9f93e82f0a3b994298" resname="Diskuze">
+        <source>Diskuze</source>
+        <target state="new">Diskuze</target>
+        <jms:reference-file line="72">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="054ceeeddaf0b4c201009c2d9748ed0c05924c6b" resname="Dostupné projekty">
+        <source>Dostupné projekty</source>
+        <target state="new">Dostupné projekty</target>
+        <jms:reference-file line="21">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\profile.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f6ed75bc5a6ed2ef3fea031dc4abe96d2472f600" resname="Duplikovat">
+        <source>Duplikovat</source>
+        <target state="new">Duplikovat</target>
+        <jms:reference-file line="82">\..\..\..\..\C:/virtual_hosts/new-promis/src\Controller\ProjectController.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="0d01e2e86669e98441ab4dce5520696c318b7098" resname="E-mail">
+        <source>E-mail</source>
+        <target state="new">E-mail</target>
+        <jms:reference-file line="12">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\profile.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="dff0a65a9724591b095def26d5662d3361c3d3e4" resname="Edit Page">
+        <source>Edit Page</source>
+        <target state="new">Edit Page</target>
+        <jms:reference-file line="3">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\edit.html.twig\</jms:reference-file>
+        <jms:reference-file line="9">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\edit.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="12d8b1f26ce84fc19cf8b175a202f0cca09202d0" resname="Editace projektů">
+        <source>Editace projektů</source>
+        <target state="new">Editace projektů</target>
+        <jms:reference-file line="157">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="b7f36cac5b421ebe84e22513bb79e9a8e550b28a" resname="Editace překladů textů">
+        <source>Editace překladů textů</source>
+        <target state="new">Editace překladů textů</target>
+        <jms:reference-file line="162">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="98162a7cafbff98333470d4ac87c53a724db721a" resname="Gantt">
+        <source>Gantt</source>
+        <target state="new">Gantt</target>
+        <jms:reference-file line="134">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+        <jms:reference-file line="88">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="3e9e4ee268dbe11a30d364066c179ff64f6a6122" resname="Heslo:">
         <source>Heslo:</source>
-        <target>Heslo:</target>
-        <jms:reference-file line="29">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+        <target state="new">Heslo:</target>
+        <jms:reference-file line="43">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\login.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="01f980df717e4f32ba38e8094d94daa612779c65" resname="Hra">
         <source>Hra</source>
         <target state="new">Hra</target>
-        <jms:reference-file line="68">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+        <jms:reference-file line="29">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="89f89c02cf47e091e726a4e07b88af0966806897" resname="ID">
+        <source>ID</source>
+        <target state="new">ID</target>
+        <jms:reference-file line="12">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\index.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4834fb179e55b736dd521eea1268be7a390117b1" resname="ID. číslo">
+        <source>ID. číslo</source>
+        <target state="new">ID. číslo</target>
+        <jms:reference-file line="11">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\profile.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="474ae52625b87d7628ae7b20a499329a99e07119" resname="Id">
+        <source>Id</source>
+        <target state="new">Id</target>
+        <jms:reference-file line="12">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\show.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="0c876a560841f6de49acf3e2839b689689069b77" resname="Již máte naplánovanou hru. Nelze dále plánovat.">
+        <source>Již máte naplánovanou hru. Nelze dále plánovat.</source>
+        <target state="new">Již máte naplánovanou hru. Nelze dále plánovat.</target>
+        <jms:reference-file line="37">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Plan\selectPlan.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4c279e8d5a3ea8ec8306380c025b616ae1292d14" resname="Jméno">
+        <source>Jméno</source>
+        <target state="new">Jméno</target>
+        <jms:reference-file line="9">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\profile.html.twig\</jms:reference-file>
+        <jms:reference-file line="76">\..\..\..\..\C:/virtual_hosts/new-promis/src\Controller\ProjectController.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="a9da1643e5ecc8b5c71c2e1bcd07db6795090d87" resname="Kontakty">
+        <source>Kontakty</source>
+        <target state="new">Kontakty</target>
+        <jms:reference-file line="13">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\profile.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="1778200bf15db4b6b167abd6dd6876ae54e426a0" resname="Kurz">
+        <source>Kurz</source>
+        <target state="new">Kurz</target>
+        <jms:reference-file line="14">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\profile.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="7c280ac5ed53ef23b22f956adf01c7744d0a5bab" resname="Manage pages">
+        <source>Manage pages</source>
+        <target state="new">Manage pages</target>
+        <jms:reference-file line="3">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\index.html.twig\</jms:reference-file>
+        <jms:reference-file line="7">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\index.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="789e412eef33cca1a4996019b3e4b7b7c6b929c6" resname="Můžete odehrát ještě">
+        <source>Můžete odehrát ještě</source>
+        <target state="new">Můžete odehrát ještě</target>
+        <jms:reference-file line="14">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Plan\selectPlan.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="d1e3be3dadafd0e4163beaefd500c65fade669e0" resname="New Page">
+        <source>New Page</source>
+        <target state="new">New Page</target>
+        <jms:reference-file line="3">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\new.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="487b683fd092e69674ad9518e6d454b5f5883f64" resname="Nové heslo">
+        <source>Nové heslo</source>
+        <target state="new">Nové heslo</target>
+        <jms:reference-file line="33">\..\..\..\..\C:/virtual_hosts/new-promis/src\Form\User\ChangePasswordType.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="57d4e16608e121b51a0ee47788ac490b8c60d0ca" resname="Nové heslo znovu">
+        <source>Nové heslo znovu</source>
+        <target state="new">Nové heslo znovu</target>
+        <jms:reference-file line="34">\..\..\..\..\C:/virtual_hosts/new-promis/src\Form\User\ChangePasswordType.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="aa3187f635c8a3e962a25af09f1a8f12ea8b9e17" resname="Nový">
+        <source>Nový</source>
+        <target state="new">Nový</target>
+        <jms:reference-file line="79">\..\..\..\..\C:/virtual_hosts/new-promis/src\Controller\ProjectController.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="fca164556ceaa6ed3814582e6f519698bff56253" resname="Nyní pro vás není k dispozici žádný projekt">
+        <source>Nyní pro vás není k dispozici žádný projekt</source>
+        <target state="new">Nyní pro vás není k dispozici žádný projekt</target>
+        <jms:reference-file line="29">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\profile.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="bf7fd2b0027e6971c50db039726caad8070cad6d" resname="Náklady">
+        <source>Náklady</source>
+        <target state="new">Náklady</target>
+        <jms:reference-file line="122">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="63d9755be02ccadc523bdf1886e7659954eb22fe" resname="Nápověda k této stránce (%name%)">
+        <source>Nápověda k této stránce (%name%)</source>
+        <target state="new">Nápověda k této stránce (%name%)</target>
+        <jms:reference-file line="75">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+        <jms:reference-file line="77">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9a9a2195057b3f3a5e887e37653c80c0ae815fe6" resname="Odehráno již">
+        <source>Odehráno již</source>
+        <target state="new">Odehráno již</target>
+        <jms:reference-file line="15">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Plan\selectPlan.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="cfe6e4aabe21ecccce71f97ee9519ce2a7ec86ff" resname="Odhlásit">
         <source>Odhlásit</source>
         <target state="new">Odhlásit</target>
-        <jms:reference-file line="45">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+        <jms:reference-file line="49">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
       </trans-unit>
-      <trans-unit id="1bc88490c8a15e839d7fcc8217e7adcb817b368d" resname="Požádat o vytvoření účtu">
-        <source>Požádat o vytvoření účtu</source>
-        <target>Požádat o vytvoření účtu</target>
-        <jms:reference-file line="40">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+      <trans-unit id="fb06270f7c212baabc8749ffc36e49dc8f321548" resname="Page">
+        <source>Page</source>
+        <target state="new">Page</target>
+        <jms:reference-file line="3">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\show.html.twig\</jms:reference-file>
+        <jms:reference-file line="7">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\show.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="519e39132bb98418cc0483cc446ccf5f3c8dcffe" resname="Path">
+        <source>Path</source>
+        <target state="new">Path</target>
+        <jms:reference-file line="13">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\index.html.twig\</jms:reference-file>
+        <jms:reference-file line="16">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\show.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="aef62d30d0c827d10e65b112ba8583b766e3999f" resname="Plán">
+        <source>Plán</source>
+        <target state="new">Plán</target>
+        <jms:reference-file line="42">\..\..\..\..\C:/virtual_hosts/new-promis/src\Controller\ProjectController.php\</jms:reference-file>
+        <jms:reference-file line="63">\..\..\..\..\C:/virtual_hosts/new-promis/src\Controller\ProjectController.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="cb990a0aee774d8c2f2f9e10eb2b41491caf2b0d" resname="Plán přejmenován.">
+        <source>Plán přejmenován.</source>
+        <target state="new">Plán přejmenován.</target>
+        <jms:reference-file line="133">\..\..\..\..\C:/virtual_hosts/new-promis/src\Controller\ProjectController.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="077ee0f02f25c30e47d8ddcf8a961f252894447c" resname="Plán zduplikován.">
+        <source>Plán zduplikován.</source>
+        <target state="new">Plán zduplikován.</target>
+        <jms:reference-file line="141">\..\..\..\..\C:/virtual_hosts/new-promis/src\Controller\ProjectController.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5ede3dc4d7121a96a93abbb993a3a78b6d1312ff" resname="Plánování">
+        <source>Plánování</source>
+        <target state="new">Plánování</target>
+        <jms:reference-file line="32">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="424a631308263edc91d7dba4d850dbaefb10ab7f" resname="Plánování čet">
+        <source>Plánování čet</source>
+        <target state="new">Plánování čet</target>
+        <jms:reference-file line="128">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+        <jms:reference-file line="82">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="e353e755429cc5c0709916bd84f84edd0d7f3e59" resname="Popis">
+        <source>Popis</source>
+        <target state="new">Popis</target>
+        <jms:reference-file line="51">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="8e3202061e79f85663db76064c9a8090eeef2d43" resname="Popis projektu">
+        <source>Popis projektu</source>
+        <target state="new">Popis projektu</target>
+        <jms:reference-file line="3">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Project\description.html.twig\</jms:reference-file>
+        <jms:reference-file line="7">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Project\description.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="75ec33f9b9aba1a266c701444f087c25a98d3249" resname="Profil uživatele">
+        <source>Profil uživatele</source>
+        <target state="new">Profil uživatele</target>
+        <jms:reference-file line="3">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\profile.html.twig\</jms:reference-file>
+        <jms:reference-file line="7">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\profile.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="20bda6d2e72578c00d52ba5fd10ff36437988dac" resname="Projekt">
+        <source>Projekt</source>
+        <target state="new">Projekt</target>
+        <jms:reference-file line="13">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Plan\selectPlan.html.twig\</jms:reference-file>
+        <jms:reference-file line="46">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="1a51dae30cd2ccb93f1abd679e5f7732cc506a13" resname="Promis">
+        <source>Promis</source>
+        <target state="new">Promis</target>
+        <jms:reference-file line="21">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\login.html.twig\</jms:reference-file>
+        <jms:reference-file line="23">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\login.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="27ae817d6102ee379d08bb28f652a1c81a2efcbf" resname="Promis - simulace projektového řízení">
         <source>Promis - simulace projektového řízení</source>
-        <target>Promis - simulace projektového řízení</target>
-        <jms:reference-file line="16">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\base.html.twig\</jms:reference-file>
+        <target state="new">Promis - simulace projektového řízení</target>
+        <jms:reference-file line="19">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\base.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4216d0cfcb891e6cff227d397d8aac3783ca1135" resname="Provést změnu hesla">
+        <source>Provést změnu hesla</source>
+        <target state="new">Provést změnu hesla</target>
+        <jms:reference-file line="36">\..\..\..\..\C:/virtual_hosts/new-promis/src\Form\User\ChangePasswordType.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="3864ebe8d82580e9d56fbfd2a4cc36614a9d4d4e" resname="Přehled">
+        <source>Přehled</source>
+        <target state="new">Přehled</target>
+        <jms:reference-file line="116">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="8e4d353dca064c5293246a4243f4e77ffdc6a188" resname="Přehled nákladů">
+        <source>Přehled nákladů</source>
+        <target state="new">Přehled nákladů</target>
+        <jms:reference-file line="100">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f7f30296dff86a3e324197c5388521c272638c41" resname="Přejmenovat">
+        <source>Přejmenovat</source>
+        <target state="new">Přejmenovat</target>
+        <jms:reference-file line="81">\..\..\..\..\C:/virtual_hosts/new-promis/src\Controller\ProjectController.php\</jms:reference-file>
       </trans-unit>
       <trans-unit id="1d647ae3d27b49cc2407cbd39bc34dd2f31f34fe" resname="Přihlásit">
         <source>Přihlásit</source>
-        <target>Přihlásit</target>
-        <jms:reference-file line="39">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+        <target state="new">Přihlásit</target>
+        <jms:reference-file line="53">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\login.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="ff4440f8c68ff0407142412433559af7a352b7c0" resname="Přihlášen jako:">
         <source>Přihlášen jako:</source>
         <target state="new">Přihlášen jako:</target>
-        <jms:reference-file line="34">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+        <jms:reference-file line="38">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="db4291e0a8028685c7c9478325da7e4faa233f89" resname="Přihlášení">
         <source>Přihlášení</source>
-        <target>Přihlášení</target>
-        <jms:reference-file line="13">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+        <target state="new">Přihlášení</target>
+        <jms:reference-file line="27">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\login.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4df2aca50182c4f776e7a6f289d0fcabe5e82e68" resname="Přiřadit k následujícím stránkám jako nápovědu">
+        <source>Přiřadit k následujícím stránkám jako nápovědu</source>
+        <target state="new">Přiřadit k následujícím stránkám jako nápovědu</target>
+        <jms:reference-file line="75">\..\..\..\..\C:/virtual_hosts/new-promis/src\Form\PageType.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="913d8ca0e6b0654adf827454811932e0b70500df" resname="Příjmení">
+        <source>Příjmení</source>
+        <target state="new">Příjmení</target>
+        <jms:reference-file line="10">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\profile.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="cd16813303713450b04d7bcea619a8591ce6da7d" resname="Realizace - druhá fáze">
+        <source>Realizace - druhá fáze</source>
+        <target state="new">Realizace - druhá fáze</target>
+        <jms:reference-file line="42">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="efc007a393f66cdb14d57d385822a3d9e36ef873" resname="Save">
+        <source>Save</source>
+        <target state="new">Save</target>
+        <jms:reference-file line="7">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\_form.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="e2112800356367791d846ccdb3760f16435600af" resname="Simulační manažerská hra">
+        <source>Simulační manažerská hra</source>
+        <target state="new">Simulační manažerská hra</target>
+        <jms:reference-file line="19">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\login.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="3af164ee74bbd8a556a3254f256c60b1d3e4f64a" resname="Skripta">
+        <source>Skripta</source>
+        <target state="new">Skripta</target>
+        <jms:reference-file line="18">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="8c6bf582752298340d4c8a9cb680fb29d4de7b92" resname="Skrýt levé menu">
         <source>Skrýt levé menu</source>
         <target state="new">Skrýt levé menu</target>
-        <jms:reference-file line="22">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+        <jms:reference-file line="25">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+        <jms:reference-file line="26">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4c9063f0cbabfb7d23ef474d4a1853a7fc4e6c6f" resname="Srovnání plánů">
+        <source>Srovnání plánů</source>
+        <target state="new">Srovnání plánů</target>
+        <jms:reference-file line="37">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="a5471da06117a40c0d69694417ae89b095017063" resname="Stránky simulační manažerské hry">
+        <source>Stránky simulační manažerské hry</source>
+        <target state="new">Stránky simulační manažerské hry</target>
+        <jms:reference-file line="6">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\base.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="1d6b9194dd62b06625c979e5bf564ff5aa8bb6a6" resname="Technologie">
+        <source>Technologie</source>
+        <target state="new">Technologie</target>
+        <jms:reference-file line="58">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="768e0c1c69573fb588f61f1308a015c11468e05f" resname="Title">
+        <source>Title</source>
+        <target state="new">Title</target>
+        <jms:reference-file line="14">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\index.html.twig\</jms:reference-file>
+        <jms:reference-file line="20">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\show.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="4e861edf9eca731b11ac80f8c046bc94b0410581" resname="Trenažér řízení projektů Promis">
         <source>Trenažér řízení projektů Promis</source>
-        <target>Trenažér řízení projektů Promis</target>
-        <jms:reference-file line="16">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
-        <jms:reference-file line="17">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
-        <jms:reference-file line="59">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
-        <jms:reference-file line="60">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
-        <jms:reference-file line="8">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
-        <jms:reference-file line="9">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+        <target state="new">Trenažér řízení projektů Promis</target>
+        <jms:reference-file line="5">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+        <jms:reference-file line="7">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+        <jms:reference-file line="18">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+        <jms:reference-file line="20">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
       </trans-unit>
-      <trans-unit id="bd0a96ccdce562d23c1db88641921cbd135e7542" resname="Trvalé přihlášení:">
-        <source>Trvalé přihlášení:</source>
-        <target>Trvalé přihlášení:</target>
-        <jms:reference-file line="33">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+      <trans-unit id="b184e90c5666e1604db0a62d0a649e1f1f6ab3ea" resname="Trvalé přihlášení">
+        <source>Trvalé přihlášení</source>
+        <target state="new">Trvalé přihlášení</target>
+        <jms:reference-file line="47">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\login.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="049a5774a41af648822b0970130bc648d06f6c1a" resname="URL stránky">
+        <source>URL stránky</source>
+        <target state="new">URL stránky</target>
+        <jms:reference-file line="67">\..\..\..\..\C:/virtual_hosts/new-promis/src\Form\PageType.php\</jms:reference-file>
       </trans-unit>
       <trans-unit id="a387815827b38e4bf66ebeea267c9e91d34ac9df" resname="Uživatelské jméno:">
         <source>Uživatelské jméno:</source>
-        <target>Uživatelské jméno:</target>
-        <jms:reference-file line="25">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+        <target state="new">Uživatelské jméno:</target>
+        <jms:reference-file line="39">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\login.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="43f63918659c971e3fe8fdcd0db3d541c37030f7" resname="Validace">
+        <source>Validace</source>
+        <target state="new">Validace</target>
+        <jms:reference-file line="106">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+        <jms:reference-file line="147">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="da4887caef136c8b5bc4ef94e3b5a56b13940091" resname="Vybrat">
+        <source>Vybrat</source>
+        <target state="new">Vybrat</target>
+        <jms:reference-file line="80">\..\..\..\..\C:/virtual_hosts/new-promis/src\Controller\ProjectController.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="461dc2e56d0852e6a53b8bd5f7be49cc3b79b14e" resname="Vytvořen nový plán.">
+        <source>Vytvořen nový plán.</source>
+        <target state="new">Vytvořen nový plán.</target>
+        <jms:reference-file line="118">\..\..\..\..\C:/virtual_hosts/new-promis/src\Controller\ProjectController.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5a94f898fe3c5a011800284deed252bf0523f8d3" resname="Výběr plánu">
+        <source>Výběr plánu</source>
+        <target state="new">Výběr plánu</target>
+        <jms:reference-file line="3">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Plan\selectPlan.html.twig\</jms:reference-file>
+        <jms:reference-file line="7">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Plan\selectPlan.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="157d33a09f34fec60032c6ff147bb418e27786e1" resname="Výběr projektu">
+        <source>Výběr projektu</source>
+        <target state="new">Výběr projektu</target>
+        <jms:reference-file line="23">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="15d51c8e4e194a2a9dca4fbbc94228b5cc9368cd" resname="Výchozí plán">
+        <source>Výchozí plán</source>
+        <target state="new">Výchozí plán</target>
+        <jms:reference-file line="147">\..\..\..\..\C:/virtual_hosts/new-promis/src\Controller\ProjectController.php\</jms:reference-file>
+        <jms:reference-file line="83">\..\..\..\..\C:/virtual_hosts/new-promis/src\Controller\ProjectController.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="8849c4f0c16e96228eeae6074b4e7b31b777b9b5" resname="Výchozí plán zduplikován.">
+        <source>Výchozí plán zduplikován.</source>
+        <target state="new">Výchozí plán zduplikován.</target>
+        <jms:reference-file line="150">\..\..\..\..\C:/virtual_hosts/new-promis/src\Controller\ProjectController.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="d1acea0cea960ad3de3a142a3272a8487ccdfa8b" resname="Zapomenuté heslo">
+        <source>Zapomenuté heslo</source>
+        <target state="new">Zapomenuté heslo</target>
+        <jms:reference-file line="54">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\login.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="ae2883a526af5b7068602e15ac9d0ae962af65e7" resname="Zavřít">
         <source>Zavřít</source>
         <target state="new">Zavřít</target>
-        <jms:reference-file line="56">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
-        <jms:reference-file line="99">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+        <jms:reference-file line="113">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\login.html.twig\</jms:reference-file>
+        <jms:reference-file line="70">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\login.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="8d1fc78f22529966847bf70678c2ca8d8771d894" resname="Zavřít toto menu">
         <source>Zavřít toto menu</source>
         <target state="new">Zavřít toto menu</target>
-        <jms:reference-file line="63">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+        <jms:reference-file line="10">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="fa977cef27a96faa77cb7179b8ce2cfa27512def" resname="Změna přihlašovacího hesla">
+        <source>Změna přihlašovacího hesla</source>
+        <target state="new">Změna přihlašovacího hesla</target>
+        <jms:reference-file line="8">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\changePassword.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="7624d8941173d80bb7e96b99033a9938b42bf682" resname="Změnit heslo">
+        <source>Změnit heslo</source>
+        <target state="new">Změnit heslo</target>
+        <jms:reference-file line="17">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\profile.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="cec951d5fe658009c28e86440f308f00a06ad90d" resname="Zobrazit cíle a průběh hry">
         <source>Zobrazit cíle a průběh hry</source>
         <target state="new">Zobrazit cíle a průběh hry</target>
-        <jms:reference-file line="48">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\user\login.html.twig\</jms:reference-file>
+        <jms:reference-file line="62">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\login.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="14464cbe0d8527e424c31a7c30ceb44641d96a1f" resname="Zobrazit levé menu">
         <source>Zobrazit levé menu</source>
         <target state="new">Zobrazit levé menu</target>
-        <jms:reference-file line="21">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+        <jms:reference-file line="25">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="c946ffc538977482c93ea76f493eccb95a20dedd" resname="Zobrazit profil">
         <source>Zobrazit profil</source>
         <target state="new">Zobrazit profil</target>
-        <jms:reference-file line="39">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
+        <jms:reference-file line="43">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\layout.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="f3f617bd9b50f5e1f0c3dabe76ebd3fc986908a1" resname="Zpráva:">
         <source>Zpráva:</source>
-        <target>Zpráva:</target>
-        <jms:reference-file line="5">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_utils\include_flash_messages_printout.html.twig\</jms:reference-file>
+        <target state="new">Zpráva:</target>
+        <jms:reference-file line="5">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_utils\include_flashMeessagesPrintout.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="d4441771edb7014dd390fa681f7301a93369b006" resname="Zprávy:">
         <source>Zprávy:</source>
-        <target>Zprávy:</target>
-        <jms:reference-file line="6">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_utils\include_flash_messages_printout.html.twig\</jms:reference-file>
+        <target state="new">Zprávy:</target>
+        <jms:reference-file line="6">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_utils\include_flashMeessagesPrintout.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="1e895684d7b3927d9880d9055469813ea6a70bd6" resname="Zpět na správu účtů (bez uložení změn)">
+        <source>Zpět na správu účtů (bez uložení změn)</source>
+        <target state="new">Zpět na správu účtů (bez uložení změn)</target>
+        <jms:reference-file line="6">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\User\changePassword.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="326b426f9ac7a96ed6baf62f8838565416d27df8" resname="actions">
+        <source>actions</source>
+        <target state="new">actions</target>
+        <jms:reference-file line="16">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\index.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="007e351c8e9101cfefbaa0e9e2bd97317054d777" resname="back to list">
+        <source>back to list</source>
+        <target state="new">back to list</target>
+        <jms:reference-file line="6">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\_form.html.twig\</jms:reference-file>
+        <jms:reference-file line="7">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\edit.html.twig\</jms:reference-file>
+        <jms:reference-file line="7">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\new.html.twig\</jms:reference-file>
+        <jms:reference-file line="30">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\show.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9ead47a82a0d25985f22f10651d1f93b3abba317" resname="edit">
+        <source>edit</source>
+        <target state="new">edit</target>
+        <jms:reference-file line="28">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\index.html.twig\</jms:reference-file>
+        <jms:reference-file line="32">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\show.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="967b094b2f005cf185f6bcd4ce61aff39c2de396" resname="hra, simulace, management, manažer">
+        <source>hra, simulace, management, manažer</source>
+        <target state="new">hra, simulace, management, manažer</target>
+        <jms:reference-file line="7">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\base.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="978b39717d167242e28157f6420fcb4d88084af7" resname="no records found">
+        <source>no records found</source>
+        <target state="new">no records found</target>
+        <jms:reference-file line="33">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\index.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9fb29051f2217270a7b253a39f820310d85a78f0" resname="show">
+        <source>show</source>
+        <target state="new">show</target>
+        <jms:reference-file line="27">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\Admin\Page\index.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="bd156d95c0e947d0d686560dc1872d6cf86356c2" resname="Čety">
+        <source>Čety</source>
+        <target state="new">Čety</target>
+        <jms:reference-file line="65">\..\..\..\..\C:/virtual_hosts/new-promis/src/../templates\_leftMenu.html.twig\</jms:reference-file>
       </trans-unit>
     </body>
   </file>

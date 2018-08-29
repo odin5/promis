@@ -1,0 +1,36 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}{{ "Page"|trans }}{% endblock %}
+
+{% block content %}
+  <div class="container visible">
+    <h1>{{ "Page"|trans }}</h1>
+
+    <table class="table">
+      <tbody>
+      <tr>
+        <th>{{ "Id"|trans }}</th>
+        <td>{{ page.id }}</td>
+      </tr>
+      <tr>
+        <th>{{ "Path"|trans }}</th>
+        <td>{{ page.path }}</td>
+      </tr>
+      <tr>
+        <th>{{ "Title"|trans }}</th>
+        <td>{{ page.title }}</td>
+      </tr>
+      <tr>
+        <th>{{ "Content"|trans }}</th>
+        <td>{{ page.content }}</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <a href="{{ path('admin_page_index') }}">{{ "back to list"|trans }}</a>
+
+    <a href="{{ path('admin_page_edit', {'id': page.id}) }}">{{ "edit"|trans }}</a>
+
+    {{ include('admin/page/_delete_form.html.twig') }}
+  </div>
+{% endblock %}

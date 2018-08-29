@@ -1,0 +1,41 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}{{ "Manage pages"|trans }}{% endblock %}
+
+{% block content %}
+  <div class="container visible">
+    <h1>{{ "Manage pages"|trans }}</h1>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>{{ "ID"|trans }}</th>
+          <th>{{ "Path"|trans }}</th>
+          <th>{{ "Title"|trans }}</th>
+          <th>{{ "Content"|trans }}</th>
+          <th>{{ "actions"|trans }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for page in pages %}
+          <tr>
+            <td>{{ page.id }}</td>
+            <td>{{ page.path }}</td>
+            <td>{{ page.title }}</td>
+            <td>{{ page.content }}</td>
+            <td>
+              <a href="{{ path('admin_page_show', {'id': page.id}) }}">{{ "show"|trans }}</a>
+              <a href="{{ path('admin_page_edit', {'id': page.id}) }}">{{ "edit"|trans }}</a>
+            </td>
+          </tr>
+        {% else %}
+          <tr>
+            <td colspan="5">{{ "no records found"|trans }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <a href="{{ path('admin_page_new') }}">{{ "Create new"|trans }}</a>
+  </div>
+{% endblock %}
